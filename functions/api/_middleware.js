@@ -6,6 +6,9 @@ const PUBLIC_ROUTES = [
   '/api/auth/forgot-password',
   '/api/auth/reset-password',
   '/api/setup',
+  '/api/hooks/cliq/command',
+  '/api/hooks/cliq/action',
+  '/api/company-games/cron',
 ];
 
 function base64UrlDecode(str) {
