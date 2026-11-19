@@ -1,33 +1,48 @@
 {
-  "current_round": 1,
-  "status": "idle",
+  "version": 2,
   "chat_id": "1424577154273436311",
-  "settings": {
+  "total_rounds_played": 1,
+
+  "schedule": {
+    "auto_start": true,
+    "hours_between_games": 24,
+    "rotation": ["spy", "trivia", "word_chain"],
+    "rotation_index": 1,
     "registration_hours": 48,
-    "clue_hours": 24,
-    "voting_hours": 24,
-    "min_players": 4,
-    "max_players": 12,
-    "auto_start_rounds": true,
-    "hours_between_rounds": 24
+    "default_phase_hours": 24
   },
-  "dm_chat_ids": {
-    "878083896": "2243180578742548662",
-    "875533728": "2218727277253804587",
-    "875576566": "2218727280768760715",
-    "926364682": "1424735394032929702",
-    "937475665": "1608784886174794162",
-    "927087872": "1424577154719520313"
+
+  "current_game": null,
+
+  "players": {
+    "878083896": { "name": "Tracy Kent", "dm_chat_id": "2243180578742548662" },
+    "875533728": { "name": "Rachel Meighan", "dm_chat_id": "2218727277253804587" },
+    "875576566": { "name": "Melissa Achal", "dm_chat_id": "2218727280768760715" },
+    "926364682": { "name": "Theresa Boyd", "dm_chat_id": "1424735394032929702" },
+    "937475665": { "name": "Jessica Heisler", "dm_chat_id": "1608784886174794162" },
+    "927087872": { "name": "Allie Siblock", "dm_chat_id": "1424577154719520313" }
   },
+
   "leaderboard": {
-    "875533728": { "name": "Rachel Meighan", "games": 1, "wins": 1, "points": 20 },
-    "878083896": { "name": "Tracy Kent", "games": 1, "wins": 0, "points": 0 },
-    "875576566": { "name": "Melissa Achal", "games": 1, "wins": 0, "points": 0 },
-    "926364682": { "name": "Theresa Boyd", "games": 1, "wins": 0, "points": 0 },
-    "937475665": { "name": "Jessica Heisler", "games": 1, "wins": 0, "points": 0 },
-    "927087872": { "name": "Allie Siblock", "games": 1, "wins": 0, "points": 0 }
+    "875533728": { "name": "Rachel Meighan", "games": 1, "wins": 1, "points": 20, "by_type": { "spy": { "games": 1, "wins": 1, "points": 20 } } },
+    "878083896": { "name": "Tracy Kent", "games": 1, "wins": 0, "points": 0, "by_type": { "spy": { "games": 1, "wins": 0, "points": 0 } } },
+    "875576566": { "name": "Melissa Achal", "games": 1, "wins": 0, "points": 0, "by_type": { "spy": { "games": 1, "wins": 0, "points": 0 } } },
+    "926364682": { "name": "Theresa Boyd", "games": 1, "wins": 0, "points": 0, "by_type": { "spy": { "games": 1, "wins": 0, "points": 0 } } },
+    "937475665": { "name": "Jessica Heisler", "games": 1, "wins": 0, "points": 0, "by_type": { "spy": { "games": 1, "wins": 0, "points": 0 } } },
+    "927087872": { "name": "Allie Siblock", "games": 1, "wins": 0, "points": 0, "by_type": { "spy": { "games": 1, "wins": 0, "points": 0 } } }
   },
-  "used_word_pairs": [["Coffee", "Tea"]],
-  "last_round_completed_at": "2026-11-19T20:00:00Z",
-  "current_game": null
+
+  "used_assets": {
+    "spy": { "word_pairs": [["Coffee", "Tea"]] },
+    "trivia": { "question_sets": [] },
+    "word_chain": { "themes": [] }
+  },
+
+  "challenges": {
+    "active": null,
+    "history": []
+  },
+
+  "last_game_completed_at": "2026-11-19T20:00:00Z",
+  "last_checked_at": null
 }
