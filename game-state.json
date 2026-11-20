@@ -50,6 +50,10 @@
       {
         "user_id": "927087872",
         "name": "Allie Siblock"
+      },
+      {
+        "user_id": "931318108",
+        "name": "Susan Achal"
       }
     ],
     "game_data": {
@@ -166,10 +170,32 @@
             "correct": true,
             "points": 10
           }
+        },
+        "4": {
+          "926364682": {
+            "name": "Theresa Boyd",
+            "answer": "Turmeric",
+            "correct": true,
+            "first": true,
+            "points": 15
+          },
+          "930774040": {
+            "name": "Pascal Vanderwalt",
+            "answer": "Cumin",
+            "correct": false,
+            "points": 0
+          },
+          "931318108": {
+            "name": "Susan Achal",
+            "answer": "turmeric",
+            "correct": true,
+            "points": 10
+          }
         }
       },
       "current_question": 4,
-      "notes": "Robert Achal (855006401) answered Q1 but is host; excluded from scoring as in round 1. Pascal Vanderwalt and Allie Siblock joined late (answered Q2); added to registered_players since trivia is open to anyone."
+      "notes": "Robert Achal (855006401) answered Q1 but is host; excluded from scoring as in round 1. Pascal Vanderwalt and Allie Siblock joined late (answered Q2); added to registered_players since trivia is open to anyone. Susan Achal (931318108) joined late on Q4; added to registered_players.",
+      "last_message_time_seen": 1795210408763
     }
   },
   "players": {
@@ -318,5 +344,5 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-19T20:00:00Z",
-  "last_checked_at": "2026-11-20T21:22:00Z"
+  "last_checked_at": "2026-11-20T21:38:00Z"
 }
