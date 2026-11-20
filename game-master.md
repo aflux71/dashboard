@@ -101,6 +101,16 @@ Post the leaderboard to the group chat every 3 rounds:
 
 ---
 
+## FUTURE FEATURES
+
+### Bot Channel Chatter
+Game Master should occasionally chime in on #Company Games with fun messages — hype before a new round, mid-game encouragement, random fun facts, countdown reminders. Keep it light and infrequent so it doesn't feel spammy.
+
+### Bot Direct Messaging
+The Production Assistant bot can DM users directly — study its Deluge handler setup to replicate that for Game Master. This would let the bot send secret game info (spy words, prompts, etc.) as "Game Master" instead of via Robert's account through MCP tools.
+
+---
+
 ## CHALLENGES (future)
 
 Challenges are special events that run alongside regular games:
