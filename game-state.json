@@ -6,7 +6,7 @@
   "schedule": {
     "auto_start": true,
     "hours_between_games": 24,
-    "rotation": ["spy", "trivia", "word_chain"],
+    "rotation": ["spy", "trivia", "word_chain", "two_truths", "emoji_pictionary", "price_is_right", "would_you_rather"],
     "rotation_index": 1,
     "registration_hours": 48,
     "default_phase_hours": 24
@@ -35,7 +35,11 @@
   "used_assets": {
     "spy": { "word_pairs": [["Coffee", "Tea"]] },
     "trivia": { "question_sets": [] },
-    "word_chain": { "themes": [] }
+    "word_chain": { "themes": [] },
+    "two_truths": { "statements_used": [] },
+    "emoji_pictionary": { "prompts_used": [] },
+    "price_is_right": { "products_used": [] },
+    "would_you_rather": { "dilemmas_used": [] }
   },
 
   "challenges": {
