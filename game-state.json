@@ -27,9 +27,9 @@
     "type": "trivia",
     "round_number": 2,
     "status": "active",
-    "phase": "question_4",
-    "phase_started_at": "2026-11-20T21:22:00Z",
-    "phase_deadline": "2026-11-20T23:22:00Z",
+    "phase": "question_5",
+    "phase_started_at": "2026-11-20T23:39:00Z",
+    "phase_deadline": "2026-11-21T01:39:00Z",
     "registered_players": [
       {
         "user_id": "878083896",
@@ -190,12 +190,25 @@
             "answer": "turmeric",
             "correct": true,
             "points": 10
+          },
+          "878083896": {
+            "name": "Tracy Kent",
+            "answer": "Turmeric",
+            "correct": true,
+            "points": 10
+          },
+          "937475665": {
+            "name": "Jessica Heisler",
+            "answer": "Turmeric",
+            "correct": true,
+            "points": 10
           }
-        }
+        },
+        "5": {}
       },
-      "current_question": 4,
+      "current_question": 5,
       "notes": "Robert Achal (855006401) answered Q1 but is host; excluded from scoring as in round 1. Pascal Vanderwalt and Allie Siblock joined late (answered Q2); added to registered_players since trivia is open to anyone. Susan Achal (931318108) joined late on Q4; added to registered_players.",
-      "last_message_time_seen": 1795210408763
+      "last_message_time_seen": 1795211323405
     }
   },
   "players": {
@@ -344,5 +357,5 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-19T20:00:00Z",
-  "last_checked_at": "2026-11-20T21:38:00Z"
+  "last_checked_at": "2026-11-20T23:39:00Z"
 }
