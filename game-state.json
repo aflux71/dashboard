@@ -26,9 +26,9 @@
     "type": "trivia",
     "round_number": 2,
     "status": "active",
-    "phase": "question_2",
-    "phase_started_at": "2026-11-20T15:23:00Z",
-    "phase_deadline": "2026-11-20T23:23:00Z",
+    "phase": "question_3",
+    "phase_started_at": "2026-11-20T17:40:00Z",
+    "phase_deadline": "2026-11-21T01:40:00Z",
     "registered_players": [
       {
         "user_id": "878083896",
@@ -41,6 +41,14 @@
       {
         "user_id": "926364682",
         "name": "Theresa Boyd"
+      },
+      {
+        "user_id": "930774040",
+        "name": "Pascal Vanderwalt"
+      },
+      {
+        "user_id": "927087872",
+        "name": "Allie Siblock"
       }
     ],
     "game_data": {
@@ -97,10 +105,43 @@
             "correct": true,
             "points": 10
           }
+        },
+        "2": {
+          "930774040": {
+            "name": "Pascal Vanderwalt",
+            "answer": "Canada",
+            "correct": true,
+            "first": true,
+            "points": 15
+          },
+          "926364682": {
+            "name": "Theresa Boyd",
+            "answer": "Canada",
+            "correct": true,
+            "points": 10
+          },
+          "878083896": {
+            "name": "Tracy Kent",
+            "answer": "Canada",
+            "correct": true,
+            "points": 10
+          },
+          "927087872": {
+            "name": "Allie Siblock",
+            "answer": "Canada",
+            "correct": true,
+            "points": 10
+          },
+          "937475665": {
+            "name": "Jessica Heisler",
+            "answer": "Canada",
+            "correct": true,
+            "points": 10
+          }
         }
       },
-      "current_question": 2,
-      "notes": "Robert Achal (855006401) answered Q1 but is host; excluded from scoring as in round 1."
+      "current_question": 3,
+      "notes": "Robert Achal (855006401) answered Q1 but is host; excluded from scoring as in round 1. Pascal Vanderwalt and Allie Siblock joined late (answered Q2); added to registered_players since trivia is open to anyone."
     }
   },
   "players": {
@@ -127,6 +168,10 @@
     "927087872": {
       "name": "Allie Siblock",
       "dm_chat_id": "1424577154719520313"
+    },
+    "930774040": {
+      "name": "Pascal Vanderwalt",
+      "dm_chat_id": "1424735393930639808"
     }
   },
   "leaderboard": {
@@ -242,5 +287,5 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-19T20:00:00Z",
-  "last_checked_at": "2026-11-20T15:23:00Z"
+  "last_checked_at": "2026-11-20T17:40:00Z"
 }
