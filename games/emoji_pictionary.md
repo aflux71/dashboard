@@ -5,7 +5,7 @@ One player describes a movie, song, place, or thing using ONLY emojis. Everyone 
 
 ## Phases
 1. **assign** — Pick prompts, assign emoji artists for each round
-2. **draw_{N}** — Artist posts their emoji clue, others guess (6 hours per round)
+2. **draw_{N}** — Artist posts their emoji clue, others guess (2 hours per round)
 3. **reveal** — Post final scores
 
 ## Setup (assign phase)
@@ -34,7 +34,7 @@ One player describes a movie, song, place, or thing using ONLY emojis. Everyone 
 4. Once emojis are posted, others guess by replying in the group
 5. First correct guess = 15 points, subsequent correct = 10 points
 6. Artist gets 10 points if at least one person guesses correctly
-7. After 6 hours or most players guessed: reveal answer, advance
+7. After 2 hours or most players guessed: reveal answer, advance
 
 ## How to Judge Guesses
 - Match case-insensitive
@@ -53,5 +53,5 @@ One player describes a movie, song, place, or thing using ONLY emojis. Everyone 
 ## Notes
 - Min 3 players, max 20
 - Each player should be artist at least once across the 5 rounds
-- Fast-paced game — 6 hour windows keep it moving
-- If artist doesn't post within 4 hours, skip their round
+- Fast-paced game — 2 hour windows keep it moving
+- If artist doesn't post within 1 hour, skip their round

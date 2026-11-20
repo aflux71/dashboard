@@ -5,13 +5,13 @@ Each player posts 3 statements about themselves — 2 true, 1 false. Everyone el
 
 ## Phases
 1. **assign** — Explain the rules, DM players to submit their statements
-2. **submit** — Players DM their 3 statements (24 hours)
-3. **guess_{N}** — Post one player's statements, others guess the lie (8 hours each)
+2. **submit** — Players DM their 3 statements (12 hours)
+3. **guess_{N}** — Post one player's statements, others guess the lie (4 hours each)
 4. **reveal** — Post final scores
 
 ## Setup (assign phase)
 1. DM each player: "🤥 **Two Truths & a Lie — Round {N}**\n\nDM me 3 statements about yourself:\n- 2 that are TRUE\n- 1 that is a LIE\n\nLabel them clearly:\nTruth 1: ...\nTruth 2: ...\nLie: ...\n\nI'll post them in random order and everyone will try to guess which is the lie!"
-2. Post to group: "🤥 **Two Truths & a Lie** — Check your DMs! Send me your 3 statements (2 truths + 1 lie). You have 24 hours."
+2. Post to group: "🤥 **Two Truths & a Lie** — Check your DMs! Send me your 3 statements (2 truths + 1 lie). You have 12 hours."
 3. Set phase to `submit`
 4. Store in game_data: `submissions: {}`
 
@@ -29,7 +29,7 @@ Each player posts 3 statements about themselves — 2 true, 1 false. Everyone el
    "🤔 **Which is the lie?** — Statements from **{player_name}**:\n\nA) {statement_1}\nB) {statement_2}\nC) {statement_3}\n\nReply with A, B, or C!"
 2. Read group messages for A/B/C responses from other players (not the featured player)
 3. Each player gets one guess
-4. After 8 hours or all guessed:
+4. After 4 hours or all guessed:
    - Reveal the lie: "The lie was **{letter})** — {lie_text}!"
    - List who got it right
    - Advance to next player or reveal if all done
@@ -45,4 +45,4 @@ Each player posts 3 statements about themselves — 2 true, 1 false. Everyone el
 - Encourage fun/surprising statements — not obvious lies
 - Skip a player's guess round if they didn't submit
 - The featured player cannot guess on their own statements
-- This game takes longer (8 hours × number of players for guess phases) — factor that in
+- This game takes longer (4 hours × number of players for guess phases) — factor that in

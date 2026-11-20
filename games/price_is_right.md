@@ -5,7 +5,7 @@ Guess the retail price of random products. Closest guess without going over wins
 
 ## Phases
 1. **assign** — Pick 5 products with prices, post round info
-2. **price_{N}** — Post product, collect guesses (8 hours per product)
+2. **price_{N}** — Post product, collect guesses (2 hours per product)
 3. **reveal** — Post final scores, biggest winner
 
 ## Setup (assign phase)
@@ -28,7 +28,7 @@ Guess the retail price of random products. Closest guess without going over wins
 Use current approximate retail prices. Be accurate — players will check!
 
 ## Price Phase
-1. Post: "💰 **Product {N}/5 — {category}**\n\n**{product_name}**\n{description}\n\nWhat's the retail price? Reply with your guess (just the number, e.g. 149.99)\n\n⏰ 8 hours to guess!"
+1. Post: "💰 **Product {N}/5 — {category}**\n\n**{product_name}**\n{description}\n\nWhat's the retail price? Reply with your guess (just the number, e.g. 149.99)\n\n⏰ 2 hours to guess!"
 2. Read group messages for numeric guesses from players
 3. Each player gets one guess (take their first number)
 4. Parse prices: strip $, commas, handle "150", "$149.99", "about 200" etc.

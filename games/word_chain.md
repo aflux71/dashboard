@@ -5,7 +5,7 @@ Players take turns adding words to a chain. Each word must start with the last l
 
 ## Phases
 1. **assign** — Pick theme, set player order, post rules
-2. **play_{N}** — Each round: players add words in order (4 hours per turn, 12 hours per round)
+2. **play_{N}** — Each round: players add words in order (2 hours per turn, 6 hours per round)
 3. **reveal** — Post chain, scores, longest streak
 
 ## Setup (assign phase)
@@ -25,7 +25,7 @@ Players take turns adding words to a chain. Each word must start with the last l
 - Valid word: starts with correct letter + fits theme (use judgment, be generous)
 - Invalid word: player gets a warning, can retry once. Second fail = skipped, loses 5 points
 - Each valid word = 10 points
-- If a player doesn't respond within 4 hours: skip them, next player goes
+- If a player doesn't respond within 2 hours: skip them, next player goes
 - Round ends after going through the full player order twice (2 laps)
 
 ## Reveal & Scoring

@@ -5,17 +5,17 @@ Async trivia game. Players answer questions posted to the group. Fastest correct
 
 ## Phases
 1. **assign** — Pick question set, post round info
-2. **question_{N}** — Post question, collect answers (8 hours per question)
+2. **question_{N}** — Post question, collect answers (2 hours per question)
 3. **reveal** — Post final scores
 
 ## Setup (assign phase)
 1. Pick 5 questions across categories (general knowledge, pop culture, science, history, workplace fun)
 2. Store questions in current_game.questions array: `[{question, answer, category, points}]`
-3. Post to group: "🧠 **Trivia Round {N}** — 5 questions over the next few days. Answer in the group chat. Fastest correct answer gets bonus points!"
+3. Post to group: "🧠 **Trivia Round {N}** — 5 quick-fire questions! Answer in the group chat. Fastest correct answer gets bonus points!"
 4. Set phase to `question_1`
 
 ## Question Phase
-1. Post: "**Question {N}/5 — {category}**\n\n{question}\n\n⏰ You have 8 hours to answer!"
+1. Post: "**Question {N}/5 — {category}**\n\n{question}\n\n⏰ You have 2 hours to answer!"
 2. Read group messages — first correct answer (case-insensitive, fuzzy match) gets 10 + 5 bonus points
 3. Subsequent correct answers get 10 points
 4. Wrong answers get 0

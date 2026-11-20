@@ -5,7 +5,7 @@ Classic word-guessing game. Game Master picks a word, posts it as blanks, and pl
 
 ## Phases
 1. **assign** — Pick 5 words with categories, post round info
-2. **word_{N}** — Post blanks, collect letter guesses (4 hours per word or until solved/failed)
+2. **word_{N}** — Post blanks, collect letter guesses (90 min per word or until solved/failed)
 3. **reveal** — Post final scores
 
 ## Setup (assign phase)
@@ -66,6 +66,6 @@ Classic word-guessing game. Game Master picks a word, posts it as blanks, and pl
 - Min 2 players, max 50 (scales great — collaborative)
 - Very low barrier — just type a letter
 - Fast-paced when multiple people are online
-- 4-hour window per word keeps it moving, but most words solve in under an hour with active players
+- 90-minute window per word keeps it moving — most words solve in under an hour with active players
 - The visual hangman (hearts/lives) makes it engaging to follow
 - Good game for high-participation days

@@ -5,9 +5,9 @@ Social deduction game. Everyone gets a word — but the spy gets a different one
 
 ## Phases
 1. **assign** — Pick word pair, assign spy, DM words
-2. **clue_1** — Players post one clue in group (24 hours)
-3. **clue_2** — Players post second clue in group (24 hours)
-4. **voting** — Players DM their vote (24 hours)
+2. **clue_1** — Players post one clue in group (8 hours)
+3. **clue_2** — Players post second clue in group (8 hours)
+4. **voting** — Players DM their vote (8 hours)
 5. **reveal** — Post results, scores, words
 
 ## Setup (assign phase)

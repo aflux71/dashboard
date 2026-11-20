@@ -8,7 +8,7 @@
   "total_rounds_played": 1,
   "schedule": {
     "auto_start": true,
-    "hours_between_games": 24,
+    "hours_between_games": 4,
     "rotation": [
       "spy",
       "trivia",
@@ -20,8 +20,8 @@
       "hangman"
     ],
     "rotation_index": 2,
-    "registration_hours": 48,
-    "default_phase_hours": 24
+    "registration_hours": 12,
+    "default_phase_hours": 8
   },
   "current_game": {
     "type": "trivia",

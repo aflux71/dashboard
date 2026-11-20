@@ -5,7 +5,7 @@ Vote on fun dilemmas. The twist: the MINORITY opinion scores points. Encourages 
 
 ## Phases
 1. **assign** — Pick 5 dilemmas, post round info
-2. **vote_{N}** — Post dilemma, collect votes (6 hours per dilemma)
+2. **vote_{N}** — Post dilemma, collect votes (3 hours per dilemma)
 3. **reveal** — Post final scores, most surprising voter
 
 ## Setup (assign phase)
@@ -53,7 +53,7 @@ Vote on fun dilemmas. The twist: the MINORITY opinion scores points. Encourages 
 1. Post: "🤔 **Dilemma {N}/5 — {category}**\n\nWould you rather...\n\n🅰️ {option_a}\n\nOR\n\n🅱️ {option_b}\n\nReply with A or B!"
 2. Read group messages for A or B votes
 3. Each player gets one vote
-4. After 6 hours or all voted:
+4. After 3 hours or all voted:
    - Count votes for each side
    - Reveal the split: "Results: 🅰️ {count_a} votes vs 🅱️ {count_b} votes"
    - Minority voters score points
@@ -74,7 +74,7 @@ Vote on fun dilemmas. The twist: the MINORITY opinion scores points. Encourages 
 
 ## Notes
 - Min 4 players, max 50 (scales great)
-- Fast rounds — 6 hour windows
+- Fast rounds — 3 hour windows
 - Very low barrier — no knowledge or skill needed, just opinions
 - Creates great water-cooler discussion
 - The minority scoring mechanic prevents groupthink and makes it strategic
