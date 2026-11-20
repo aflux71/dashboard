@@ -27,9 +27,9 @@
     "type": "trivia",
     "round_number": 2,
     "status": "active",
-    "phase": "question_3",
-    "phase_started_at": "2026-11-20T17:40:00Z",
-    "phase_deadline": "2026-11-21T01:40:00Z",
+    "phase": "question_4",
+    "phase_started_at": "2026-11-20T21:22:00Z",
+    "phase_deadline": "2026-11-20T23:22:00Z",
     "registered_players": [
       {
         "user_id": "878083896",
@@ -139,9 +139,36 @@
             "correct": true,
             "points": 10
           }
+        },
+        "3": {
+          "930774040": {
+            "name": "Pascal Vanderwalt",
+            "answer": "Diamond",
+            "correct": true,
+            "first": true,
+            "points": 15
+          },
+          "878083896": {
+            "name": "Tracy Kent",
+            "answer": "Diamond",
+            "correct": true,
+            "points": 10
+          },
+          "926364682": {
+            "name": "Theresa Boyd",
+            "answer": "Diamond",
+            "correct": true,
+            "points": 10
+          },
+          "937475665": {
+            "name": "Jessica Heisler",
+            "answer": "Diamond",
+            "correct": true,
+            "points": 10
+          }
         }
       },
-      "current_question": 3,
+      "current_question": 4,
       "notes": "Robert Achal (855006401) answered Q1 but is host; excluded from scoring as in round 1. Pascal Vanderwalt and Allie Siblock joined late (answered Q2); added to registered_players since trivia is open to anyone."
     }
   },
@@ -291,5 +318,5 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-19T20:00:00Z",
-  "last_checked_at": "2026-11-20T17:40:00Z"
+  "last_checked_at": "2026-11-20T21:22:00Z"
 }
