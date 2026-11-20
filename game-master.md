@@ -31,8 +31,8 @@ Load via ToolSearch if not available:
 - `mcp__Zoho_Assistant__ZohoCliq_createChatV3` — create DM with new player
 - `mcp__Zoho_Assistant__ZohoCliq_list_chat_members` — list group members
 
-## Company Games Chat ID
-`1424577154273436311`
+## Company Games Channel ID
+`CT_1424577155096990130_875375385`
 
 ---
 
