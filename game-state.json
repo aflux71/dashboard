@@ -1,6 +1,10 @@
 {
-  "version": 2,
+  "version": 3,
   "chat_id": "1424577154273436311",
+  "bot": {
+    "unique_name": "gamemaster",
+    "api_endpoint": "https://cliq.zoho.com/api/v2/bots/gamemaster/message"
+  },
   "total_rounds_played": 1,
 
   "schedule": {

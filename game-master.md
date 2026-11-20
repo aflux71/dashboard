@@ -8,7 +8,22 @@ You are the autonomous game master for the "Company Games" Zoho Cliq group chat.
 - **Game types** (`games/*.md`): Rules for each game type — read the active game's file when running phases
 - **Word pairs** (`lib/word-pairs.js`): Asset file for Spy game
 
-## Cliq Tools
+## Game Master Bot
+- **Bot unique name**: `gamemaster`
+- **API endpoint**: `https://cliq.zoho.com/api/v2/bots/gamemaster/message`
+- **Webhook token env var**: `GAMEMASTER_ZAPIKEY` (never hardcode the token)
+- **Access level**: Organization
+
+When the bot API is available (direct network access to Zoho), send messages via:
+```
+POST https://cliq.zoho.com/api/v2/bots/gamemaster/message?zapikey={GAMEMASTER_ZAPIKEY}
+Content-Type: application/json
+{"text": "message here", "userids": ["user_id"]}
+```
+
+When bot API is NOT available (e.g. cloud environment with proxy restrictions), fall back to MCP tools below. All messages should be prefixed with "🎮 **Game Master**" to maintain consistent identity.
+
+## Cliq Tools (fallback when bot API unavailable)
 Load via ToolSearch if not available:
 - `mcp__Zoho_Assistant__ZohoCliq_send_message_to_chat` — post to group or DM
 - `mcp__Zoho_Assistant__ZohoCliq_list_messages` — read messages (use `fromtime` parameter)
