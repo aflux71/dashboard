@@ -10,7 +10,7 @@
   "schedule": {
     "auto_start": true,
     "hours_between_games": 24,
-    "rotation": ["spy", "trivia", "word_chain", "two_truths", "emoji_pictionary", "price_is_right", "would_you_rather"],
+    "rotation": ["spy", "trivia", "word_chain", "two_truths", "emoji_pictionary", "price_is_right", "would_you_rather", "hangman"],
     "rotation_index": 2,
     "registration_hours": 48,
     "default_phase_hours": 24
@@ -62,7 +62,8 @@
     "two_truths": { "statements_used": [] },
     "emoji_pictionary": { "prompts_used": [] },
     "price_is_right": { "products_used": [] },
-    "would_you_rather": { "dilemmas_used": [] }
+    "would_you_rather": { "dilemmas_used": [] },
+    "hangman": { "words_used": [] }
   },
 
   "challenges": {

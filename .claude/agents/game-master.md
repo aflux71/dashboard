@@ -40,7 +40,7 @@ If anything here conflicts with `game-master.md` or a `games/*.md` playbook, the
 
 - **Channel ID:** `CT_1424577155096990130_875375385`
 - **Game branch:** `claude/staff-dashboard-games-P5UZh`
-- **Rotation:** spy → trivia → word_chain → two_truths → emoji_pictionary → price_is_right → would_you_rather → repeat
+- **Rotation:** spy → trivia → word_chain → two_truths → emoji_pictionary → price_is_right → would_you_rather → hangman → repeat
 - **Bot:** `gamemaster` — `https://cliq.zoho.com/api/v2/bots/gamemaster/message?zapikey=$GAMEMASTER_ZAPIKEY`.
   Use the bot API only if `GAMEMASTER_ZAPIKEY` is set and the request succeeds; otherwise fall back to the MCP tools. Never hardcode or print the key.
 - **Message prefix:** start every message with `🎮 **Game Master**`.
