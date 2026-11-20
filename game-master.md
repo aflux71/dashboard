@@ -11,6 +11,7 @@ You are the autonomous game master for the "Company Games" Zoho Cliq group chat.
 ## Game Master Bot
 - **Bot unique name**: `gamemaster`
 - **API endpoint**: `https://cliq.zoho.com/api/v2/bots/gamemaster/message`
+- **Incoming webhook**: `https://cliq.zoho.com/api/v2/bots/gamemaster/incoming`
 - **Webhook token env var**: `GAMEMASTER_ZAPIKEY` (never hardcode the token)
 - **Access level**: Organization
 
