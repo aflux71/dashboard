@@ -11,12 +11,31 @@
     "auto_start": true,
     "hours_between_games": 24,
     "rotation": ["spy", "trivia", "word_chain", "two_truths", "emoji_pictionary", "price_is_right", "would_you_rather"],
-    "rotation_index": 1,
+    "rotation_index": 2,
     "registration_hours": 48,
     "default_phase_hours": 24
   },
 
-  "current_game": null,
+  "current_game": {
+    "type": "trivia",
+    "round_number": 2,
+    "status": "active",
+    "phase": "question_1",
+    "phase_started_at": "2026-11-20T01:40:00Z",
+    "phase_deadline": "2026-11-20T09:40:00Z",
+    "registered_players": [],
+    "game_data": {
+      "questions": [
+        { "question": "What is the name of the coffee shop in the TV show Friends?", "answer": "Central Perk", "category": "Pop Culture", "points": 10 },
+        { "question": "What country has the most natural lakes in the world?", "answer": "Canada", "category": "Geography", "points": 10 },
+        { "question": "What is the hardest natural substance on Earth?", "answer": "Diamond", "category": "Science", "points": 10 },
+        { "question": "What spice gives curry its yellow color?", "answer": "Turmeric", "category": "Food & Drink", "points": 10 },
+        { "question": "How many bones does an adult human body have?", "answer": "206", "category": "Fun Facts", "points": 10 }
+      ],
+      "answers": {},
+      "current_question": 1
+    }
+  },
 
   "players": {
     "878083896": { "name": "Tracy Kent", "dm_chat_id": "2243180578742548662" },
