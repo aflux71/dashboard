@@ -71,12 +71,12 @@
       ],
       "laps_total": 2,
       "current_lap": 2,
-      "current_turn_index": 0,
-      "turn_started_at": "2026-11-21T21:38:48Z",
-      "turn_deadline": "2026-11-21T23:38:48Z",
+      "current_turn_index": 1,
+      "turn_started_at": "2026-11-21T23:39:18Z",
+      "turn_deadline": "2026-11-22T01:39:18Z",
       "turn_hours": 2,
-      "last_word": "Spaghetti",
-      "required_letter": "I",
+      "last_word": "Italian Sausage",
+      "required_letter": "E",
       "chain": [
         {
           "word": "Pizza",
@@ -101,6 +101,11 @@
           "word": "Spaghetti",
           "player": "927087872",
           "name": "Allie Siblock"
+        },
+        {
+          "word": "Italian Sausage",
+          "player": "938890898",
+          "name": "Sofia Diaz"
         }
       ],
       "turns": [
@@ -139,10 +144,19 @@
           "valid": true,
           "points": 10,
           "message_time_ms": 1795291276794
+        },
+        {
+          "user_id": "938890898",
+          "name": "Sofia Diaz",
+          "lap": 2,
+          "word": "Italian Sausage",
+          "valid": true,
+          "points": 10,
+          "message_time_ms": 1795301987200
         }
       ],
       "strikes": {},
-      "last_message_time_ms": 1795291276794,
+      "last_message_time_ms": 1795301987200,
       "started_early_by_owner": true
     }
   },
@@ -380,5 +394,5 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-21T01:39:00Z",
-  "last_checked_at": "2026-11-21T21:38:48Z"
+  "last_checked_at": "2026-11-21T23:39:18Z"
 }
