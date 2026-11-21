@@ -26,10 +26,10 @@
   "current_game": {
     "type": "word_chain",
     "round_number": 3,
-    "status": "registration",
-    "phase": "registration",
-    "phase_started_at": "2026-11-21T13:38:30Z",
-    "phase_deadline": "2026-11-22T01:38:30Z",
+    "status": "active",
+    "phase": "play_1",
+    "phase_started_at": "2026-11-21T17:36:30Z",
+    "phase_deadline": "2026-11-21T19:36:30Z",
     "registered_players": [
       {
         "user_id": "878083896",
@@ -38,9 +38,56 @@
       {
         "user_id": "926364682",
         "name": "Theresa Boyd"
+      },
+      {
+        "user_id": "938890898",
+        "name": "Sofia Diaz"
+      },
+      {
+        "user_id": "927087872",
+        "name": "Allie Siblock"
       }
     ],
-    "game_data": {}
+    "game_data": {
+      "theme": "Food & Drink",
+      "seed_word": "Pizza",
+      "player_order": [
+        {
+          "user_id": "938890898",
+          "name": "Sofia Diaz"
+        },
+        {
+          "user_id": "878083896",
+          "name": "Tracy Kent"
+        },
+        {
+          "user_id": "926364682",
+          "name": "Theresa Boyd"
+        },
+        {
+          "user_id": "927087872",
+          "name": "Allie Siblock"
+        }
+      ],
+      "laps_total": 2,
+      "current_lap": 1,
+      "current_turn_index": 0,
+      "turn_started_at": "2026-11-21T17:36:30Z",
+      "turn_deadline": "2026-11-21T19:36:30Z",
+      "turn_hours": 2,
+      "last_word": "Pizza",
+      "required_letter": "A",
+      "chain": [
+        {
+          "word": "Pizza",
+          "player": "seed"
+        }
+      ],
+      "turns": [],
+      "strikes": {},
+      "last_message_time_ms": 1795280182817,
+      "started_early_by_owner": true
+    }
   },
   "players": {
     "878083896": {
@@ -70,6 +117,10 @@
     "930774040": {
       "name": "Pascal Vanderwalt",
       "dm_chat_id": "1424735393930639808"
+    },
+    "938890898": {
+      "name": "Sofia Diaz",
+      "dm_chat_id": "1424577156273546136"
     }
   },
   "leaderboard": {
@@ -232,7 +283,9 @@
       ]
     },
     "word_chain": {
-      "themes": []
+      "themes": [
+        "Food & Drink"
+      ]
     },
     "two_truths": {
       "statements_used": []
@@ -255,5 +308,5 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-21T01:39:00Z",
-  "last_checked_at": "2026-11-21T15:38:35Z"
+  "last_checked_at": "2026-11-21T17:36:30Z"
 }
