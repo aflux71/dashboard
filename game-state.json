@@ -30,7 +30,16 @@
     "phase": "registration",
     "phase_started_at": "2026-11-21T13:38:30Z",
     "phase_deadline": "2026-11-22T01:38:30Z",
-    "registered_players": [],
+    "registered_players": [
+      {
+        "user_id": "878083896",
+        "name": "Tracy Kent"
+      },
+      {
+        "user_id": "926364682",
+        "name": "Theresa Boyd"
+      }
+    ],
     "game_data": {}
   },
   "players": {
@@ -246,5 +255,5 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-21T01:39:00Z",
-  "last_checked_at": "2026-11-21T13:38:30Z"
+  "last_checked_at": "2026-11-21T15:38:35Z"
 }
