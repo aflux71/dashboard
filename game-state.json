@@ -29,7 +29,7 @@
     "status": "active",
     "phase": "play_1",
     "phase_started_at": "2026-11-21T17:36:30Z",
-    "phase_deadline": "2026-11-21T19:36:30Z",
+    "phase_deadline": "2026-11-21T21:39:30Z",
     "registered_players": [
       {
         "user_id": "878083896",
@@ -71,21 +71,36 @@
       ],
       "laps_total": 2,
       "current_lap": 1,
-      "current_turn_index": 0,
-      "turn_started_at": "2026-11-21T17:36:30Z",
-      "turn_deadline": "2026-11-21T19:36:30Z",
+      "current_turn_index": 1,
+      "turn_started_at": "2026-11-21T19:39:30Z",
+      "turn_deadline": "2026-11-21T21:39:30Z",
       "turn_hours": 2,
-      "last_word": "Pizza",
-      "required_letter": "A",
+      "last_word": "Aperol",
+      "required_letter": "L",
       "chain": [
         {
           "word": "Pizza",
           "player": "seed"
+        },
+        {
+          "word": "Aperol",
+          "player": "938890898",
+          "name": "Sofia Diaz"
         }
       ],
-      "turns": [],
+      "turns": [
+        {
+          "user_id": "938890898",
+          "name": "Sofia Diaz",
+          "lap": 1,
+          "word": "Aperol",
+          "valid": true,
+          "points": 10,
+          "message_time_ms": 1795284668496
+        }
+      ],
       "strikes": {},
-      "last_message_time_ms": 1795280182817,
+      "last_message_time_ms": 1795284668496,
       "started_early_by_owner": true
     }
   },
@@ -308,5 +323,5 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-21T01:39:00Z",
-  "last_checked_at": "2026-11-21T17:39:00Z"
+  "last_checked_at": "2026-11-21T19:39:30Z"
 }
