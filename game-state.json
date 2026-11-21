@@ -5,7 +5,7 @@
     "unique_name": "gamemaster",
     "api_endpoint": "https://cliq.zoho.com/api/v2/bots/gamemaster/message"
   },
-  "total_rounds_played": 1,
+  "total_rounds_played": 2,
   "schedule": {
     "auto_start": true,
     "hours_between_games": 4,
@@ -23,194 +23,7 @@
     "registration_hours": 12,
     "default_phase_hours": 8
   },
-  "current_game": {
-    "type": "trivia",
-    "round_number": 2,
-    "status": "active",
-    "phase": "question_5",
-    "phase_started_at": "2026-11-20T23:39:00Z",
-    "phase_deadline": "2026-11-21T01:39:00Z",
-    "registered_players": [
-      {
-        "user_id": "878083896",
-        "name": "Tracy Kent"
-      },
-      {
-        "user_id": "937475665",
-        "name": "Jessica Heisler"
-      },
-      {
-        "user_id": "926364682",
-        "name": "Theresa Boyd"
-      },
-      {
-        "user_id": "930774040",
-        "name": "Pascal Vanderwalt"
-      },
-      {
-        "user_id": "927087872",
-        "name": "Allie Siblock"
-      },
-      {
-        "user_id": "931318108",
-        "name": "Susan Achal"
-      }
-    ],
-    "game_data": {
-      "questions": [
-        {
-          "question": "What is the name of the coffee shop in the TV show Friends?",
-          "answer": "Central Perk",
-          "category": "Pop Culture",
-          "points": 10
-        },
-        {
-          "question": "What country has the most natural lakes in the world?",
-          "answer": "Canada",
-          "category": "Geography",
-          "points": 10
-        },
-        {
-          "question": "What is the hardest natural substance on Earth?",
-          "answer": "Diamond",
-          "category": "Science",
-          "points": 10
-        },
-        {
-          "question": "What spice gives curry its yellow color?",
-          "answer": "Turmeric",
-          "category": "Food & Drink",
-          "points": 10
-        },
-        {
-          "question": "How many bones does an adult human body have?",
-          "answer": "206",
-          "category": "Fun Facts",
-          "points": 10
-        }
-      ],
-      "answers": {
-        "1": {
-          "878083896": {
-            "name": "Tracy Kent",
-            "answer": "Central perk",
-            "correct": true,
-            "first": true,
-            "points": 15
-          },
-          "937475665": {
-            "name": "Jessica Heisler",
-            "answer": "Central perk",
-            "correct": true,
-            "points": 10
-          },
-          "926364682": {
-            "name": "Theresa Boyd",
-            "answer": "Central Perk",
-            "correct": true,
-            "points": 10
-          }
-        },
-        "2": {
-          "930774040": {
-            "name": "Pascal Vanderwalt",
-            "answer": "Canada",
-            "correct": true,
-            "first": true,
-            "points": 15
-          },
-          "926364682": {
-            "name": "Theresa Boyd",
-            "answer": "Canada",
-            "correct": true,
-            "points": 10
-          },
-          "878083896": {
-            "name": "Tracy Kent",
-            "answer": "Canada",
-            "correct": true,
-            "points": 10
-          },
-          "927087872": {
-            "name": "Allie Siblock",
-            "answer": "Canada",
-            "correct": true,
-            "points": 10
-          },
-          "937475665": {
-            "name": "Jessica Heisler",
-            "answer": "Canada",
-            "correct": true,
-            "points": 10
-          }
-        },
-        "3": {
-          "930774040": {
-            "name": "Pascal Vanderwalt",
-            "answer": "Diamond",
-            "correct": true,
-            "first": true,
-            "points": 15
-          },
-          "878083896": {
-            "name": "Tracy Kent",
-            "answer": "Diamond",
-            "correct": true,
-            "points": 10
-          },
-          "926364682": {
-            "name": "Theresa Boyd",
-            "answer": "Diamond",
-            "correct": true,
-            "points": 10
-          },
-          "937475665": {
-            "name": "Jessica Heisler",
-            "answer": "Diamond",
-            "correct": true,
-            "points": 10
-          }
-        },
-        "4": {
-          "926364682": {
-            "name": "Theresa Boyd",
-            "answer": "Turmeric",
-            "correct": true,
-            "first": true,
-            "points": 15
-          },
-          "930774040": {
-            "name": "Pascal Vanderwalt",
-            "answer": "Cumin",
-            "correct": false,
-            "points": 0
-          },
-          "931318108": {
-            "name": "Susan Achal",
-            "answer": "turmeric",
-            "correct": true,
-            "points": 10
-          },
-          "878083896": {
-            "name": "Tracy Kent",
-            "answer": "Turmeric",
-            "correct": true,
-            "points": 10
-          },
-          "937475665": {
-            "name": "Jessica Heisler",
-            "answer": "Turmeric",
-            "correct": true,
-            "points": 10
-          }
-        },
-        "5": {}
-      },
-      "current_question": 5,
-      "notes": "Robert Achal (855006401) answered Q1 but is host; excluded from scoring as in round 1. Pascal Vanderwalt and Allie Siblock joined late (answered Q2); added to registered_players since trivia is open to anyone. Susan Achal (931318108) joined late on Q4; added to registered_players.",
-      "last_message_time_seen": 1795211323405
-    }
-  },
+  "current_game": null,
   "players": {
     "878083896": {
       "name": "Tracy Kent",
@@ -257,14 +70,19 @@
     },
     "878083896": {
       "name": "Tracy Kent",
-      "games": 1,
+      "games": 2,
       "wins": 0,
-      "points": 0,
+      "points": 60,
       "by_type": {
         "spy": {
           "games": 1,
           "wins": 0,
           "points": 0
+        },
+        "trivia": {
+          "games": 1,
+          "wins": 0,
+          "points": 60
         }
       }
     },
@@ -283,40 +101,94 @@
     },
     "926364682": {
       "name": "Theresa Boyd",
-      "games": 1,
-      "wins": 0,
-      "points": 0,
+      "games": 2,
+      "wins": 1,
+      "points": 75,
       "by_type": {
         "spy": {
           "games": 1,
           "wins": 0,
           "points": 0
+        },
+        "trivia": {
+          "games": 1,
+          "wins": 1,
+          "points": 75
         }
       }
     },
     "937475665": {
       "name": "Jessica Heisler",
-      "games": 1,
+      "games": 2,
       "wins": 0,
-      "points": 0,
+      "points": 45,
       "by_type": {
         "spy": {
           "games": 1,
           "wins": 0,
           "points": 0
+        },
+        "trivia": {
+          "games": 1,
+          "wins": 0,
+          "points": 45
         }
       }
     },
     "927087872": {
       "name": "Allie Siblock",
-      "games": 1,
+      "games": 2,
       "wins": 0,
-      "points": 0,
+      "points": 25,
       "by_type": {
         "spy": {
           "games": 1,
           "wins": 0,
           "points": 0
+        },
+        "trivia": {
+          "games": 1,
+          "wins": 0,
+          "points": 25
+        }
+      }
+    },
+    "930774040": {
+      "name": "Pascal Vanderwalt",
+      "games": 1,
+      "wins": 0,
+      "points": 35,
+      "by_type": {
+        "trivia": {
+          "games": 1,
+          "wins": 0,
+          "points": 35
+        }
+      }
+    },
+    "931318108": {
+      "name": "Susan Achal",
+      "games": 1,
+      "wins": 0,
+      "points": 15,
+      "by_type": {
+        "trivia": {
+          "games": 1,
+          "wins": 0,
+          "points": 15
+        }
+      }
+    },
+    "925667633": {
+      "name": "Jack Menna",
+      "games": 1,
+      "wins": 0,
+      "points": 5,
+      "by_type": {
+        "trivia": {
+          "games": 1,
+          "wins": 0,
+          "points": 5
         }
       }
     }
@@ -331,7 +203,15 @@
       ]
     },
     "trivia": {
-      "question_sets": []
+      "question_sets": [
+        [
+          "What is the name of the coffee shop in the TV show Friends?",
+          "What country has the most natural lakes in the world?",
+          "What is the hardest natural substance on Earth?",
+          "What spice gives curry its yellow color?",
+          "How many bones does an adult human body have?"
+        ]
+      ]
     },
     "word_chain": {
       "themes": []
@@ -356,6 +236,6 @@
     "active": null,
     "history": []
   },
-  "last_game_completed_at": "2026-11-19T20:00:00Z",
-  "last_checked_at": "2026-11-20T23:39:00Z"
+  "last_game_completed_at": "2026-11-21T01:39:00Z",
+  "last_checked_at": "2026-11-21T01:39:00Z"
 }
