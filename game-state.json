@@ -27,9 +27,9 @@
     "type": "word_chain",
     "round_number": 3,
     "status": "active",
-    "phase": "play_1",
-    "phase_started_at": "2026-11-21T17:36:30Z",
-    "phase_deadline": "2026-11-21T21:39:30Z",
+    "phase": "play_2",
+    "phase_started_at": "2026-11-21T21:38:48Z",
+    "phase_deadline": "2026-11-22T05:38:48Z",
     "registered_players": [
       {
         "user_id": "878083896",
@@ -70,13 +70,13 @@
         }
       ],
       "laps_total": 2,
-      "current_lap": 1,
-      "current_turn_index": 1,
-      "turn_started_at": "2026-11-21T19:39:30Z",
-      "turn_deadline": "2026-11-21T21:39:30Z",
+      "current_lap": 2,
+      "current_turn_index": 0,
+      "turn_started_at": "2026-11-21T21:38:48Z",
+      "turn_deadline": "2026-11-21T23:38:48Z",
       "turn_hours": 2,
-      "last_word": "Aperol",
-      "required_letter": "L",
+      "last_word": "Spaghetti",
+      "required_letter": "I",
       "chain": [
         {
           "word": "Pizza",
@@ -86,6 +86,21 @@
           "word": "Aperol",
           "player": "938890898",
           "name": "Sofia Diaz"
+        },
+        {
+          "word": "Limoncello",
+          "player": "878083896",
+          "name": "Tracy Kent"
+        },
+        {
+          "word": "Olives",
+          "player": "926364682",
+          "name": "Theresa Boyd"
+        },
+        {
+          "word": "Spaghetti",
+          "player": "927087872",
+          "name": "Allie Siblock"
         }
       ],
       "turns": [
@@ -97,10 +112,37 @@
           "valid": true,
           "points": 10,
           "message_time_ms": 1795284668496
+        },
+        {
+          "user_id": "878083896",
+          "name": "Tracy Kent",
+          "lap": 1,
+          "word": "Limoncello",
+          "valid": true,
+          "points": 10,
+          "message_time_ms": 1795290104957
+        },
+        {
+          "user_id": "926364682",
+          "name": "Theresa Boyd",
+          "lap": 1,
+          "word": "Olives",
+          "valid": true,
+          "points": 10,
+          "message_time_ms": 1795291154409
+        },
+        {
+          "user_id": "927087872",
+          "name": "Allie Siblock",
+          "lap": 1,
+          "word": "Spaghetti",
+          "valid": true,
+          "points": 10,
+          "message_time_ms": 1795291276794
         }
       ],
       "strikes": {},
-      "last_message_time_ms": 1795284668496,
+      "last_message_time_ms": 1795291276794,
       "started_early_by_owner": true
     }
   },
@@ -338,5 +380,5 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-21T01:39:00Z",
-  "last_checked_at": "2026-11-21T19:39:30Z"
+  "last_checked_at": "2026-11-21T21:38:48Z"
 }
