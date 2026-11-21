@@ -26,10 +26,10 @@ When bot API is NOT available (e.g. cloud environment with proxy restrictions), 
 
 ## Cliq Tools (fallback when bot API unavailable)
 Load via ToolSearch if not available:
-- `mcp__Zoho_Assistant__ZohoCliq_send_message_to_chat` — post to group or DM
-- `mcp__Zoho_Assistant__ZohoCliq_list_messages` — read messages (use `fromtime` parameter)
-- `mcp__Zoho_Assistant__ZohoCliq_createChatV3` — create DM with new player
-- `mcp__Zoho_Assistant__ZohoCliq_list_chat_members` — list group members
+- `mcp__Zoho-Assistant__ZohoCliq_send_message_to_chat` — post to group or DM
+- `mcp__Zoho-Assistant__ZohoCliq_list_messages` — read messages (use `fromtime` parameter)
+- `mcp__Zoho-Assistant__ZohoCliq_createChatV3` — create DM with new player
+- `mcp__Zoho-Assistant__ZohoCliq_list_chat_members` — list group members
 
 ## Company Games Channel ID
 `CT_1424577155096990130_875375385`
@@ -42,7 +42,9 @@ Load via ToolSearch if not available:
 1. Read `game-state.json`
 2. Update `last_checked_at` to now
 3. Determine what to do based on `current_game` status
-4. Take action, update state, commit and push
+4. Take action on the main game
+5. Run the **Brain Teaser** side event — read `games/brain_teaser.md` and follow its *Each Run* steps. It's independent of the main game and runs whether or not a game is active.
+6. Update state, commit and push
 
 ### Status: No Active Game (current_game is null)
 If `schedule.auto_start` is true AND enough time has passed since `last_game_completed_at`:

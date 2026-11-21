@@ -316,7 +316,22 @@
     },
     "hangman": {
       "words_used": []
+    },
+    "brain_teaser": {
+      "teasers_used": []
     }
+  },
+  "brain_teaser": {
+    "enabled": true,
+    "weekdays_only": true,
+    "timezone": "America/Toronto",
+    "post_window_start_hour": 10,
+    "post_window_end_hour": 15,
+    "min_hours_between": 20,
+    "answer_hours": 6,
+    "count": 0,
+    "last_posted_at": null,
+    "active": null
   },
   "challenges": {
     "active": null,

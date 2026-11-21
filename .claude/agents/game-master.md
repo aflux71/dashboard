@@ -58,6 +58,8 @@ If anything here conflicts with `game-master.md` or a `games/*.md` playbook, the
 
 Post the leaderboard after every 3rd completed round.
 
+**Brain Teaser (every run, after the main game):** read `games/brain_teaser.md` and follow its *Each Run* steps — score `teaser:` answers, reveal when the deadline passes, and post a new teaser once per weekday in the 10am–3pm Toronto window. It runs independently of `current_game`.
+
 ## Saving state
 
 After every change, and on every run (at least `last_checked_at`):
