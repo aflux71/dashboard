@@ -58,7 +58,7 @@ Skip this whole section, silently, if `GAMEMASTER_AGENT_KEY` is unset or the ser
    ```
    Returns `{"messages": [{id, cliq_user_id, name, text, received_at}], "scores": [{id, cliq_user_id, name, game, points, day}]}`.
 2. **Messages** are DMs to the bot. Treat each exactly like a DM from that player for the current phase (spy vote, Two Truths statements, etc.), alongside any DMs found the usual way. Messages that don't fit the current phase need no action.
-3. **Scores** are solo-game points (already capped at 20 per player per day by the server). For each, skipping any id in `solo.pending_acks`:
+3. **Scores** are solo-game points (already capped at 20 per player per day by the server). Robert Achal (`855006401`) is the host and isn't scored: acknowledge his scores but don't add them. For each other score, skipping any id in `solo.pending_acks`:
    - add `points` to `leaderboard.{cliq_user_id}.points` (create the entry with `games: 0, wins: 0` if new, using `name`)
    - add to `leaderboard.{cliq_user_id}.by_type.solo`: `played` +1, `points` +N
    - don't change top-level `games`/`wins` — those count main-rotation games only
@@ -173,6 +173,12 @@ git add game-state.json
 git commit -m "Game master: round {N} - {phase/action}"
 git push -u origin claude/staff-dashboard-games-P5UZh
 ```
+
+---
+
+## BOT PERMISSION NOTE
+The first time someone messages the Game Master bot, Cliq asks them to approve it ("Allow Game Master to access…"), and again every 60 days. **Whenever a post or DM asks players to message the bot** (votes, submissions, solo games, welcomes to new players), include this line:
+"🔓 First time messaging me? Cliq will ask for permission. Tap **Proceed to allow**; that's what lets me run your games."
 
 ---
 
