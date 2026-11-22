@@ -14,7 +14,7 @@ Make two long random strings, e.g. from a password manager. Each key has one job
 | Key | Set it in | Also paste it into |
 |-----|-----------|--------------------|
 | `GM_BOT_KEY` | Base44 → Game Master app → Settings → Secrets | the bot's Message handler (`PASTE_KEY_HERE`) |
-| `GM_AGENT_KEY` | Base44 → Game Master app → Settings → Secrets | the Claude cloud environment, as the env var `GAMEMASTER_AGENT_KEY` |
+| `GM_AGENT_KEY` | Base44 → Game Master app → Settings → Secrets | the Claude cloud environment "DashBoard", as a **network credential** for host `game-master-4673b1ce.base44.app` (Bearer). The proxy adds it to requests, so no env var holds it. |
 
 The server refuses every request until its key is set (it answers "GM_BOT_KEY is not set").
 
@@ -37,6 +37,4 @@ Bots & Tools → Bots → Game Master → **Edit Handlers**:
 
 ## Cloud environment (for the scheduled task)
 
-The scheduled task reaches the server and Cliq only if the environment allows those hosts:
-- allowed hosts: `game-master-4673b1ce.base44.app`, `cliq.zoho.com`
-- env vars: `GAMEMASTER_AGENT_KEY` (= `GM_AGENT_KEY`), `GAMEMASTER_ZAPIKEY` (the bot's webhook token)
+The "DashBoard" environment holds `GM_AGENT_KEY` as a network credential for `game-master-4673b1ce.base44.app`; saving it also allowed that host. Nothing else is needed: the scheduled task never calls Cliq directly.

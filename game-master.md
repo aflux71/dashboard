@@ -50,11 +50,11 @@ Load via ToolSearch if not available:
 ### Bot Inbox & Solo Points
 Players DM the Game Master bot. The Base44 app **Game Master** (https://game-master-4673b1ce.base44.app, setup in `cliq/README.md`) runs solo games there and keeps every other DM for you.
 
-Skip this whole section, silently, if `GAMEMASTER_AGENT_KEY` is unset or the server can't be reached. Never print the key.
+The key (`GM_AGENT_KEY`) is saved as a network credential on the cloud environment: the proxy adds the `Authorization` header itself, so send requests **without** one. If the fetch fails (401, timeout, not JSON), skip this section for this run and send a PushNotification only if it fails two runs in a row.
 
 1. **Fetch** (before handling the main game, so votes/submissions are counted this run):
    ```bash
-   curl -s -H "Authorization: Bearer $GAMEMASTER_AGENT_KEY" https://game-master-4673b1ce.base44.app/api/agent
+   curl -s -m 20 https://game-master-4673b1ce.base44.app/api/agent
    ```
    Returns `{"messages": [{id, cliq_user_id, name, text, received_at}], "scores": [{id, cliq_user_id, name, game, points, day}]}`.
 2. **Messages** are DMs to the bot. Treat each exactly like a DM from that player for the current phase (spy vote, Two Truths statements, etc.), alongside any DMs found the usual way. Messages that don't fit the current phase need no action.
@@ -64,7 +64,7 @@ Skip this whole section, silently, if `GAMEMASTER_AGENT_KEY` is unset or the ser
    - don't change top-level `games`/`wins` — those count main-rotation games only
 4. **Acknowledge** only after `game-state.json` is committed and pushed:
    ```bash
-   curl -s -X POST -H "Authorization: Bearer $GAMEMASTER_AGENT_KEY" -H "Content-Type: application/json" \
+   curl -s -m 20 -X POST -H "Content-Type: application/json" \
      -d '{"ack_messages": [...ids], "ack_scores": [...ids]}' https://game-master-4673b1ce.base44.app/api/agent
    ```
    If this fails, put the score ids in `solo.pending_acks` (so they aren't counted twice), commit, and retry the ack next run; clear ids once acked.
