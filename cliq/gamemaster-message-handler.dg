@@ -2,46 +2,51 @@
 // Forwards every DM to the Game Master server (Base44 app "Game Master"), which runs
 // the solo games and keeps everything else (spy votes, Two Truths statements) for the
 // Game Master's next check-in. The bot shows the server's reply as is.
+// Cliq requires the handler to end with a return, so the reply is built first and returned once.
 // Replace PASTE_KEY_HERE with the GM_BOT_KEY you set in Base44 (see cliq/README.md).
 key = "PASTE_KEY_HERE";
 url = "https://game-master-4673b1ce.base44.app/api/cliq";
 
+reply = "I can only read text messages. Type *play* for a quick solo game.";
 text = ifnull(message,"").trim();
-if(text == "")
+if(text != "")
 {
-	return {"text":"I can only read text messages. Type *play* for a quick solo game."};
-}
-name = ifnull(user.get("first_name"),"");
-if(user.get("last_name") != null)
-{
-	name = name + " " + user.get("last_name");
-}
-payload = Map();
-payload.put("cliq_user_id",ifnull(user.get("id"),""));
-payload.put("name",name.trim());
-payload.put("email",ifnull(user.get("email"),""));
-payload.put("text",text);
-headers = Map();
-headers.put("Authorization","Bearer " + key);
-headers.put("Content-Type","application/json");
-try
-{
-	result = invokeurl
-	[
-		url :url
-		type :POST
-		parameters:payload.toString()
-		headers:headers
-		detailed:true
-	];
-	answer = result.get("responseText").toString().toMap();
-	if(answer != null && answer.get("text") != null)
+	name = ifnull(user.get("first_name"),"");
+	if(user.get("last_name") != null)
 	{
-		return {"text":answer.get("text")};
+		name = name + " " + user.get("last_name");
 	}
-	return {"text":"Sorry, the Game Master server answered with error " + result.get("responseCode") + ". Please tell Robert."};
+	payload = Map();
+	payload.put("cliq_user_id",ifnull(user.get("id"),""));
+	payload.put("name",name.trim());
+	payload.put("email",ifnull(user.get("email"),""));
+	payload.put("text",text);
+	headers = Map();
+	headers.put("Authorization","Bearer " + key);
+	headers.put("Content-Type","application/json");
+	try
+	{
+		result = invokeurl
+		[
+			url :url
+			type :POST
+			parameters:payload.toString()
+			headers:headers
+			detailed:true
+		];
+		answer = result.get("responseText").toString().toMap();
+		if(answer != null && answer.get("text") != null)
+		{
+			reply = answer.get("text");
+		}
+		else
+		{
+			reply = "Sorry, the Game Master server answered with error " + result.get("responseCode") + ". Please tell Robert.";
+		}
+	}
+	catch (e)
+	{
+		reply = "Sorry, I couldn't reach the Game Master server just now. Try again in a minute, and tell Robert if it keeps happening.";
+	}
 }
-catch (e)
-{
-	return {"text":"Sorry, I couldn't reach the Game Master server just now. Try again in a minute, and tell Robert if it keeps happening."};
-}
+return {"text":reply};
