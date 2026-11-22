@@ -278,6 +278,9 @@
       "teasers_used": []
     }
   },
+  "solo": {
+    "pending_acks": []
+  },
   "brain_teaser": {
     "enabled": true,
     "weekdays_only": true,

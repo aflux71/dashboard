@@ -41,10 +41,33 @@ Load via ToolSearch if not available:
 ### On Every Run
 1. Read `game-state.json`
 2. Update `last_checked_at` to now
-3. Determine what to do based on `current_game` status
-4. Take action on the main game
-5. Run the **Brain Teaser** side event — read `games/brain_teaser.md` and follow its *Each Run* steps. It's independent of the main game and runs whether or not a game is active.
-6. Update state, commit and push
+3. Fetch the **Bot Inbox & Solo Points** (below) and add solo points to the leaderboard
+4. Determine what to do based on `current_game` status, counting bot-inbox DMs as player DMs
+5. Take action on the main game
+6. Run the **Brain Teaser** side event — read `games/brain_teaser.md` and follow its *Each Run* steps. It's independent of the main game and runs whether or not a game is active.
+7. Update state, commit and push, then acknowledge the bot inbox
+
+### Bot Inbox & Solo Points
+Players DM the Game Master bot. The Base44 app **Game Master** (https://game-master-4673b1ce.base44.app, setup in `cliq/README.md`) runs solo games there and keeps every other DM for you.
+
+Skip this whole section, silently, if `GAMEMASTER_AGENT_KEY` is unset or the server can't be reached. Never print the key.
+
+1. **Fetch** (before handling the main game, so votes/submissions are counted this run):
+   ```bash
+   curl -s -H "Authorization: Bearer $GAMEMASTER_AGENT_KEY" https://game-master-4673b1ce.base44.app/api/agent
+   ```
+   Returns `{"messages": [{id, cliq_user_id, name, text, received_at}], "scores": [{id, cliq_user_id, name, game, points, day}]}`.
+2. **Messages** are DMs to the bot. Treat each exactly like a DM from that player for the current phase (spy vote, Two Truths statements, etc.), alongside any DMs found the usual way. Messages that don't fit the current phase need no action.
+3. **Scores** are solo-game points (already capped at 20 per player per day by the server). For each, skipping any id in `solo.pending_acks`:
+   - add `points` to `leaderboard.{cliq_user_id}.points` (create the entry with `games: 0, wins: 0` if new, using `name`)
+   - add to `leaderboard.{cliq_user_id}.by_type.solo`: `played` +1, `points` +N
+   - don't change top-level `games`/`wins` — those count main-rotation games only
+4. **Acknowledge** only after `game-state.json` is committed and pushed:
+   ```bash
+   curl -s -X POST -H "Authorization: Bearer $GAMEMASTER_AGENT_KEY" -H "Content-Type: application/json" \
+     -d '{"ack_messages": [...ids], "ack_scores": [...ids]}' https://game-master-4673b1ce.base44.app/api/agent
+   ```
+   If this fails, put the score ids in `solo.pending_acks` (so they aren't counted twice), commit, and retry the ack next run; clear ids once acked.
 
 ### Status: No Active Game (current_game is null)
 If `schedule.auto_start` is true AND enough time has passed since `last_game_completed_at`:

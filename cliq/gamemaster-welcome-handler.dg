@@ -1,0 +1,5 @@
+// Game Master bot: Welcome handler.
+// Shown when someone opens the bot for the first time. Opening the bot once is also
+// what lets the Game Master DM them later.
+name = ifnull(user.get("first_name"),"there");
+return {"text":"Hi " + name + "! 🎮 I'm the Game Master for #Company Games.\n\n*Solo games, any time:* type *play* to see them (trivia, number guess, word scramble, hangman). Solo points count on the leaderboard, up to 20 a day.\n\n*Main games:* when a game asks you to send me something privately, like a spy vote, send it right here. I check messages every 2 hours during the day."};
