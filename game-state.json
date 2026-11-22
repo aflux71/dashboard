@@ -5,7 +5,7 @@
     "unique_name": "gamemaster",
     "api_endpoint": "https://cliq.zoho.com/api/v2/bots/gamemaster/message"
   },
-  "total_rounds_played": 2,
+  "total_rounds_played": 3,
   "schedule": {
     "auto_start": true,
     "hours_between_games": 4,
@@ -23,171 +23,7 @@
     "registration_hours": 12,
     "default_phase_hours": 8
   },
-  "current_game": {
-    "type": "word_chain",
-    "round_number": 3,
-    "status": "active",
-    "phase": "play_2",
-    "phase_started_at": "2026-11-21T21:38:48Z",
-    "phase_deadline": "2026-11-22T05:38:48Z",
-    "registered_players": [
-      {
-        "user_id": "878083896",
-        "name": "Tracy Kent"
-      },
-      {
-        "user_id": "926364682",
-        "name": "Theresa Boyd"
-      },
-      {
-        "user_id": "938890898",
-        "name": "Sofia Diaz"
-      },
-      {
-        "user_id": "927087872",
-        "name": "Allie Siblock"
-      }
-    ],
-    "game_data": {
-      "theme": "Food & Drink",
-      "seed_word": "Pizza",
-      "player_order": [
-        {
-          "user_id": "938890898",
-          "name": "Sofia Diaz"
-        },
-        {
-          "user_id": "878083896",
-          "name": "Tracy Kent"
-        },
-        {
-          "user_id": "926364682",
-          "name": "Theresa Boyd"
-        },
-        {
-          "user_id": "927087872",
-          "name": "Allie Siblock"
-        }
-      ],
-      "laps_total": 2,
-      "current_lap": 2,
-      "current_turn_index": 3,
-      "turn_started_at": "2026-11-22T00:44:13Z",
-      "turn_deadline": "2026-11-22T02:44:13Z",
-      "turn_hours": 2,
-      "last_word": "Squash",
-      "required_letter": "H",
-      "chain": [
-        {
-          "word": "Pizza",
-          "player": "seed"
-        },
-        {
-          "word": "Aperol",
-          "player": "938890898",
-          "name": "Sofia Diaz"
-        },
-        {
-          "word": "Limoncello",
-          "player": "878083896",
-          "name": "Tracy Kent"
-        },
-        {
-          "word": "Olives",
-          "player": "926364682",
-          "name": "Theresa Boyd"
-        },
-        {
-          "word": "Spaghetti",
-          "player": "927087872",
-          "name": "Allie Siblock"
-        },
-        {
-          "word": "Italian Sausage",
-          "player": "938890898",
-          "name": "Sofia Diaz"
-        },
-        {
-          "word": "Enchiladas",
-          "player": "878083896",
-          "name": "Tracy Kent"
-        },
-        {
-          "word": "Squash",
-          "player": "926364682",
-          "name": "Theresa Boyd"
-        }
-      ],
-      "turns": [
-        {
-          "user_id": "938890898",
-          "name": "Sofia Diaz",
-          "lap": 1,
-          "word": "Aperol",
-          "valid": true,
-          "points": 10,
-          "message_time_ms": 1795284668496
-        },
-        {
-          "user_id": "878083896",
-          "name": "Tracy Kent",
-          "lap": 1,
-          "word": "Limoncello",
-          "valid": true,
-          "points": 10,
-          "message_time_ms": 1795290104957
-        },
-        {
-          "user_id": "926364682",
-          "name": "Theresa Boyd",
-          "lap": 1,
-          "word": "Olives",
-          "valid": true,
-          "points": 10,
-          "message_time_ms": 1795291154409
-        },
-        {
-          "user_id": "927087872",
-          "name": "Allie Siblock",
-          "lap": 1,
-          "word": "Spaghetti",
-          "valid": true,
-          "points": 10,
-          "message_time_ms": 1795291276794
-        },
-        {
-          "user_id": "938890898",
-          "name": "Sofia Diaz",
-          "lap": 2,
-          "word": "Italian Sausage",
-          "valid": true,
-          "points": 10,
-          "message_time_ms": 1795301987200
-        },
-        {
-          "user_id": "878083896",
-          "name": "Tracy Kent",
-          "lap": 2,
-          "word": "Enchiladas",
-          "valid": true,
-          "points": 10,
-          "message_time_ms": 1795307812585
-        },
-        {
-          "user_id": "926364682",
-          "name": "Theresa Boyd",
-          "lap": 2,
-          "word": "Squash",
-          "valid": true,
-          "points": 10,
-          "message_time_ms": 1795308253633
-        }
-      ],
-      "strikes": {},
-      "last_message_time_ms": 1795308253633,
-      "started_early_by_owner": true
-    }
-  },
+  "current_game": null,
   "players": {
     "878083896": {
       "name": "Tracy Kent",
@@ -238,9 +74,9 @@
     },
     "878083896": {
       "name": "Tracy Kent",
-      "games": 2,
-      "wins": 0,
-      "points": 60,
+      "games": 3,
+      "wins": 1,
+      "points": 105,
       "by_type": {
         "spy": {
           "games": 1,
@@ -251,6 +87,11 @@
           "games": 1,
           "wins": 0,
           "points": 60
+        },
+        "word_chain": {
+          "games": 1,
+          "wins": 1,
+          "points": 45
         }
       }
     },
@@ -269,9 +110,9 @@
     },
     "926364682": {
       "name": "Theresa Boyd",
-      "games": 2,
-      "wins": 1,
-      "points": 75,
+      "games": 3,
+      "wins": 2,
+      "points": 120,
       "by_type": {
         "spy": {
           "games": 1,
@@ -282,6 +123,11 @@
           "games": 1,
           "wins": 1,
           "points": 75
+        },
+        "word_chain": {
+          "games": 1,
+          "wins": 1,
+          "points": 45
         }
       }
     },
@@ -305,9 +151,9 @@
     },
     "927087872": {
       "name": "Allie Siblock",
-      "games": 2,
-      "wins": 0,
-      "points": 25,
+      "games": 3,
+      "wins": 1,
+      "points": 70,
       "by_type": {
         "spy": {
           "games": 1,
@@ -318,6 +164,11 @@
           "games": 1,
           "wins": 0,
           "points": 25
+        },
+        "word_chain": {
+          "games": 1,
+          "wins": 1,
+          "points": 45
         }
       }
     },
@@ -357,6 +208,19 @@
           "games": 1,
           "wins": 0,
           "points": 5
+        }
+      }
+    },
+    "938890898": {
+      "name": "Sofia Diaz",
+      "games": 1,
+      "wins": 1,
+      "points": 45,
+      "by_type": {
+        "word_chain": {
+          "games": 1,
+          "wins": 1,
+          "points": 45
         }
       }
     }
@@ -421,6 +285,26 @@
     "active": null,
     "history": []
   },
-  "last_game_completed_at": "2026-11-21T01:39:00Z",
-  "last_checked_at": "2026-11-22T01:39:00Z"
+  "last_game_completed_at": "2026-11-22T13:45:00Z",
+  "last_checked_at": "2026-11-22T13:45:00Z",
+  "round_history": [
+    {
+      "round": 3,
+      "type": "word_chain",
+      "theme": "Food & Drink",
+      "chain": [
+        "Pizza",
+        "Aperol",
+        "Limoncello",
+        "Olives",
+        "Spaghetti",
+        "Italian Sausage",
+        "Enchiladas",
+        "Squash",
+        "Hot Tea"
+      ],
+      "result": "4-way tie, 45 pts each",
+      "completed_at": "2026-11-22T13:45:00Z"
+    }
+  ]
 }
