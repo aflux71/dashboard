@@ -136,6 +136,14 @@ Post the leaderboard to the group chat every 3 rounds:
 
 ## FUTURE FEATURES
 
+### Store vs Store (agreed with Robert Nov 23, 2026 — not built yet)
+- **Locations:** the bot asks each player "Which location are you at?" the first time they play a store game and remembers it (needs Robert's list of locations).
+- **Images first:** the server draws boards/clues as images and the bot posts them to the channel or privately to the players who need them; public board links only as an extra.
+- **Flagship:** store-vs-store **Escape Room**: rooms unlocked by codes DMed to the bot, image clues per store, hints cost points, daily race image.
+- **Also liked:** Connect Four (each store votes its next move), Tug of War (every game played pulls the rope toward your store), Store Trivia Cup (store's average score wins, not the total), Territory Map (stores claim squares with daily activity), Battleship.
+- **Fairness:** big stores mustn't win by headcount: cap moves per store per day or score by average/participation rate.
+- Robert is gathering games already designed in other chats/projects to sort into this plan.
+
 ### Bot Channel Chatter
 Game Master should occasionally chime in on #Company Games with fun messages — hype before a new round, mid-game encouragement, random fun facts, countdown reminders. Keep it light and infrequent so it doesn't feel spammy.
 
