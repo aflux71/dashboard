@@ -23,32 +23,7 @@
     "registration_hours": 12,
     "default_phase_hours": 8
   },
-  "current_game": {
-    "type": "two_truths",
-    "round_number": 4,
-    "status": "registration",
-    "phase": "registration",
-    "phase_started_at": "2026-11-22T19:38:00Z",
-    "phase_deadline": "2026-11-23T07:38:00Z",
-    "registered_players": [
-      {
-        "user_id": "878083896",
-        "name": "Tracy Kent",
-        "registered_at": "2026-11-22T19:39:31Z"
-      },
-      {
-        "user_id": "926364682",
-        "name": "Theresa Boyd",
-        "registered_at": "2026-11-22T20:22:25Z"
-      },
-      {
-        "user_id": "927087872",
-        "name": "Allie Siblock",
-        "registered_at": "2026-11-22T20:29:07Z"
-      }
-    ],
-    "game_data": {}
-  },
+  "current_game": null,
   "players": {
     "878083896": {
       "name": "Tracy Kent",
@@ -314,7 +289,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-22T13:45:00Z",
-  "last_checked_at": "2026-11-23T01:39:00Z",
+  "last_checked_at": "2026-11-23T13:40:00Z",
   "round_history": [
     {
       "round": 3,
@@ -333,6 +308,12 @@
       ],
       "result": "4-way tie, 45 pts each",
       "completed_at": "2026-11-22T13:45:00Z"
+    },
+    {
+      "round": 4,
+      "type": "two_truths",
+      "result": "cancelled — 3/4 min players (Tracy Kent, Theresa Boyd, Allie Siblock)",
+      "completed_at": "2026-11-23T13:40:00Z"
     }
   ]
 }
