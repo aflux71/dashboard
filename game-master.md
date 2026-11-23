@@ -25,6 +25,15 @@ curl -s -m 30 -X POST -H "Content-Type: application/json" \
 - Posts from the bot already show "Game Master" as the sender, so when sending through the bot, **drop** the leading `🎮 **Game Master**` line that the game files' templates start with.
 - **Fallback:** if `/api/send` fails (not `ok`), send the same message with the Zoho tools below, **with** the `🎮 **Game Master**` prefix (those post as Robert). A failed bot DM usually means the player has never opened the bot: fall back for them and note it, no notification needed.
 
+**Images (boards, clues, standings)** — drawn by the server and sent inside Cliq, so players never need a web link (no open pages, nothing for store POS screens):
+```bash
+curl -s -m 60 -X POST -H "Content-Type: application/json" -d @req.json https://game-master-4673b1ce.base44.app/api/image
+```
+- `{"audience":"private","to":[{"id":"<cliq id>","name":"Tracy"}],"image":{...},"caption":"..."}` → DMed to each player, stamped "PRIVATE · for Tracy only".
+- `{"audience":"public","image":{...},"caption":"..."}` → posted in #Company Games.
+- **GUARDRAIL: anything that is part of the gameplay secret (a store's own board, a clue, a hidden word, a hand of cards) is `private`, sent only to that game's participants. Never `public`.** Use `public` only for things every player may see: standings, scores, a shared board with no hidden information. The server refuses a public request that names recipients, and private images can never reach the channel. When unsure, use private.
+- Image types: `grid` (cells: `{fill, text, shape}`, rowLabels/colLabels ≤12, legend), `card` (`big` text + `lines`), `standings` (rows `{label, value, fraction 0–1, highlight}`). Fills: empty, water, blue, red, orange, yellow, green, purple, pink, gray, white, black, or #hex. No emoji in images (dropped). Add `"preview": true` to get the PNG back without sending.
+
 **Reading players' private replies** (votes, Two Truths statements): players now DM the **bot**, so read the bot inbox (*Bot Inbox & Solo Points*). Also check the player's old DM chat with Robert (`players.{id}.dm_chat_id`) with `list_messages`, in case they replied there out of habit.
 
 Channel replies ("I'm in", clues, answers) are read with `list_messages` on the channel, as before.
