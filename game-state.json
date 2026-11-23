@@ -19,11 +19,20 @@
       "would_you_rather",
       "hangman"
     ],
-    "rotation_index": 4,
+    "rotation_index": 5,
     "registration_hours": 12,
     "default_phase_hours": 8
   },
-  "current_game": null,
+  "current_game": {
+    "type": "emoji_pictionary",
+    "round_number": 5,
+    "status": "registration",
+    "phase": "registration",
+    "phase_started_at": "2026-11-23T17:40:00Z",
+    "phase_deadline": "2026-11-24T05:40:00Z",
+    "registered_players": [],
+    "game_data": {}
+  },
   "players": {
     "878083896": {
       "name": "Tracy Kent",
@@ -299,7 +308,36 @@
       "explanation": "A map shows cities, mountains and water — but none of the real things on them.",
       "posted_at": "2026-11-23T15:45:00Z",
       "deadline": "2026-11-23T21:45:00Z",
-      "answers": {}
+      "answers": {
+        "925667633": {
+          "name": "Jack Menna",
+          "answer": "A map!",
+          "correct": true,
+          "first": true,
+          "points": 10
+        },
+        "930774040": {
+          "name": "Pascal Vanderwalt",
+          "answer": "A cartograph",
+          "correct": true,
+          "first": false,
+          "points": 5
+        },
+        "878083896": {
+          "name": "Tracy Kent",
+          "answer": "map",
+          "correct": true,
+          "first": false,
+          "points": 5
+        },
+        "888387370": {
+          "name": "Laura Thomas",
+          "answer": "a map",
+          "correct": true,
+          "first": false,
+          "points": 5
+        }
+      }
     }
   },
   "challenges": {
@@ -307,7 +345,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-22T13:45:00Z",
-  "last_checked_at": "2026-11-23T15:45:00Z",
+  "last_checked_at": "2026-11-23T17:40:00Z",
   "round_history": [
     {
       "round": 3,
