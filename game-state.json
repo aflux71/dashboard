@@ -266,7 +266,9 @@
       "words_used": []
     },
     "brain_teaser": {
-      "teasers_used": []
+      "teasers_used": [
+        "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?"
+      ]
     }
   },
   "solo": {
@@ -280,16 +282,32 @@
     "post_window_end_hour": 15,
     "min_hours_between": 20,
     "answer_hours": 6,
-    "count": 0,
-    "last_posted_at": null,
-    "active": null
+    "count": 1,
+    "last_posted_at": "2026-11-23T15:45:00Z",
+    "active": {
+      "number": 1,
+      "category": "Riddle",
+      "question": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
+      "answer": "A map",
+      "accepted_answers": [
+        "map",
+        "a map",
+        "maps",
+        "atlas",
+        "globe"
+      ],
+      "explanation": "A map shows cities, mountains and water — but none of the real things on them.",
+      "posted_at": "2026-11-23T15:45:00Z",
+      "deadline": "2026-11-23T21:45:00Z",
+      "answers": {}
+    }
   },
   "challenges": {
     "active": null,
     "history": []
   },
   "last_game_completed_at": "2026-11-22T13:45:00Z",
-  "last_checked_at": "2026-11-23T15:40:00Z",
+  "last_checked_at": "2026-11-23T15:45:00Z",
   "round_history": [
     {
       "round": 3,
