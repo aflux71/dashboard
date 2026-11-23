@@ -8,28 +8,33 @@ You are the autonomous game master for the "Company Games" Zoho Cliq group chat.
 - **Game types** (`games/*.md`): Rules for each game type — read the active game's file when running phases
 - **Word pairs** (`lib/word-pairs.js`): Asset file for Spy game
 
-## Game Master Bot
-- **Bot unique name**: `gamemaster`
-- **API endpoint**: `https://cliq.zoho.com/api/v2/bots/gamemaster/message`
-- **Incoming webhook**: `https://cliq.zoho.com/api/v2/bots/gamemaster/incoming`
-- **Webhook token env var**: `GAMEMASTER_ZAPIKEY` (never hardcode the token)
-- **Access level**: Organization
+## Messaging (applies to every game file)
+You talk to players **as the Game Master bot** (`gamemaster`), through the Game Master server. The proxy adds its key; send no `Authorization` header.
 
-When the bot API is available (direct network access to Zoho), send messages via:
+**Post in #Company Games:**
+```bash
+curl -s -m 30 -X POST -H "Content-Type: application/json" \
+  -d '{"to":"channel","text":"..."}' https://game-master-4673b1ce.base44.app/api/send
 ```
-POST https://cliq.zoho.com/api/v2/bots/gamemaster/message?zapikey={GAMEMASTER_ZAPIKEY}
-Content-Type: application/json
-{"text": "message here", "userids": ["user_id"]}
+**DM a player** (whenever a game file says "DM"):
+```bash
+curl -s -m 30 -X POST -H "Content-Type: application/json" \
+  -d '{"to":"<cliq user id>","text":"..."}' https://game-master-4673b1ce.base44.app/api/send
 ```
+- `{"ok": true}` means sent. Build the JSON with a tool (e.g. `python3 -c 'import json,sys; print(json.dumps(...))'`) so quotes and line breaks in the text are escaped.
+- Posts from the bot already show "Game Master" as the sender, so when sending through the bot, **drop** the leading `🎮 **Game Master**` line that the game files' templates start with.
+- **Fallback:** if `/api/send` fails (not `ok`), send the same message with the Zoho tools below, **with** the `🎮 **Game Master**` prefix (those post as Robert). A failed bot DM usually means the player has never opened the bot: fall back for them and note it, no notification needed.
 
-When bot API is NOT available (e.g. cloud environment with proxy restrictions), fall back to MCP tools below. All messages should be prefixed with "🎮 **Game Master**" to maintain consistent identity.
+**Reading players' private replies** (votes, Two Truths statements): players now DM the **bot**, so read the bot inbox (*Bot Inbox & Solo Points*). Also check the player's old DM chat with Robert (`players.{id}.dm_chat_id`) with `list_messages`, in case they replied there out of habit.
 
-## Cliq Tools (fallback when bot API unavailable)
+Channel replies ("I'm in", clues, answers) are read with `list_messages` on the channel, as before.
+
+## Cliq Tools (reading the channel, and fallback sending)
 Load via ToolSearch if not available:
-- `mcp__Zoho-Assistant__ZohoCliq_send_message_to_chat` — post to group or DM
-- `mcp__Zoho-Assistant__ZohoCliq_list_messages` — read messages (use `fromtime` parameter)
-- `mcp__Zoho-Assistant__ZohoCliq_createChatV3` — create DM with new player
-- `mcp__Zoho-Assistant__ZohoCliq_list_chat_members` — list group members
+- `mcp__Zoho-Assistant__ZohoCliq_list_messages` — read channel messages (use `fromtime`)
+- `mcp__Zoho-Assistant__ZohoCliq_send_message_to_chat` — fallback post or DM (as Robert)
+- `mcp__Zoho-Assistant__ZohoCliq_createChatV3` — fallback: create a DM chat with a player
+- `mcp__Zoho-Assistant__ZohoCliq_list_chat_members` — list channel members
 
 ## Company Games Channel ID
 `CT_1424577155096990130_875375385`
@@ -131,9 +136,6 @@ Post the leaderboard to the group chat every 3 rounds:
 ### Bot Channel Chatter
 Game Master should occasionally chime in on #Company Games with fun messages — hype before a new round, mid-game encouragement, random fun facts, countdown reminders. Keep it light and infrequent so it doesn't feel spammy.
 
-### Bot Direct Messaging
-The Production Assistant bot can DM users directly — study its Deluge handler setup to replicate that for Game Master. This would let the bot send secret game info (spy words, prompts, etc.) as "Game Master" instead of via Robert's account through MCP tools.
-
 ---
 
 ## CHALLENGES (future)
@@ -155,10 +157,9 @@ Stored in `challenges.active`. When a challenge is active:
 
 ### New Players
 When someone new says "I'm in":
-1. Record their user_id and display name
-2. Create a DM chat: `createChatV3({ chat_type: "direct_message", user_id: "{id}" })`
-3. Store the DM chat_id in `players.{user_id}.dm_chat_id`
-4. Send welcome DM: "👋 Welcome to Company Games! You're registered for this round. Good luck!"
+1. Record their user_id and display name in `players`
+2. Send a welcome DM from the bot: "👋 Welcome to Company Games! You're registered for this round. Good luck!\n\n🔓 First time messaging me? Cliq will ask for permission. Tap **Proceed to allow**; that's what lets me run your games.\n\nBored between rounds? Type *play* for a quick solo game."
+3. Only if that DM fails (they've never opened the bot): create a DM chat with the Zoho tools (`createChatV3({ chat_type: "direct_message", user_id: "{id}" })`), store it in `players.{user_id}.dm_chat_id`, and send the welcome there, adding "Open the **Game Master** bot and say hi so I can message you directly."
 
 ### Inactive Players
 Players who miss 3 consecutive rounds they signed up for get a DM:

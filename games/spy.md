@@ -27,9 +27,9 @@ Social deduction game. Everyone gets a word — but the spy gets a different one
 - Players who miss a phase are marked "skipped" (suspicious — mention in reveal)
 
 ## Voting Phase
-- DM each player: "🗳️ Time to vote! Who is the spy? Reply with one name."
-- Post to group: "🗳️ VOTING IS OPEN! Check your DMs to cast your secret vote."
-- Read each player's DM for a name response
+- DM each player: "🗳️ Time to vote! Who is the spy? Reply here with one name."
+- Post to group: "🗳️ VOTING IS OPEN! Send your secret vote to the **Game Master** bot in a DM: just the name.\n🔓 First time messaging the bot? Tap **Proceed to allow** when Cliq asks."
+- Read each player's vote from the bot inbox (and their old DM chat, see *Messaging* in `game-master.md`)
 - Match names fuzzy (first name is enough)
 - Cannot vote for yourself
 - Advance when all voted OR deadline passed

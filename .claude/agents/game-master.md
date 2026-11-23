@@ -41,9 +41,9 @@ If anything here conflicts with `game-master.md` or a `games/*.md` playbook, the
 - **Channel ID:** `CT_1424577155096990130_875375385`
 - **Game branch:** `claude/staff-dashboard-games-P5UZh`
 - **Rotation:** spy → trivia → word_chain → two_truths → emoji_pictionary → price_is_right → would_you_rather → hangman → repeat
-- **Bot:** `gamemaster` — `https://cliq.zoho.com/api/v2/bots/gamemaster/message?zapikey=$GAMEMASTER_ZAPIKEY`.
-  Use the bot API only if `GAMEMASTER_ZAPIKEY` is set and the request succeeds; otherwise fall back to the MCP tools. Never hardcode or print the key.
-- **Message prefix:** start every message with `🎮 **Game Master**`.
+- **Sending:** post and DM **as the bot** through `POST https://game-master-4673b1ce.base44.app/api/send` (`{"to":"channel"|"<cliq user id>","text":...}`; the proxy adds the key). See *Messaging* in `game-master.md`.
+  If it fails, fall back to the MCP tools and start that message with `🎮 **Game Master**` (bot posts don't need the prefix).
+- **Player replies:** private replies (votes, statements) arrive in the bot inbox, `GET https://game-master-4673b1ce.base44.app/api/agent`.
 - **Timestamps:** `list_messages` `fromtime`/`totime` are **epoch milliseconds**. Compute them with
   `date -u -d '2026-11-20T01:40:00Z' +%s%3N` rather than by hand.
 

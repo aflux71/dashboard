@@ -10,13 +10,13 @@ Each player posts 3 statements about themselves — 2 true, 1 false. Everyone el
 4. **reveal** — Post final scores
 
 ## Setup (assign phase)
-1. DM each player: "🤥 **Two Truths & a Lie — Round {N}**\n\nDM me 3 statements about yourself:\n- 2 that are TRUE\n- 1 that is a LIE\n\nLabel them clearly:\nTruth 1: ...\nTruth 2: ...\nLie: ...\n\nI'll post them in random order and everyone will try to guess which is the lie!"
-2. Post to group: "🤥 **Two Truths & a Lie** — Check your DMs! Send me your 3 statements (2 truths + 1 lie). You have 12 hours."
+1. DM each player: "🤥 **Two Truths & a Lie — Round {N}**\n\nReply here, in one message, with 3 statements about yourself:\n- 2 that are TRUE\n- 1 that is a LIE\n\nLabel them clearly:\nTruth 1: ...\nTruth 2: ...\nLie: ...\n\nI'll post them in random order and everyone will try to guess which is the lie!"
+2. Post to group: "🤥 **Two Truths & a Lie** — Check your DMs! Send your 3 statements (2 truths + 1 lie) to the **Game Master** bot in a DM. You have 12 hours.\n🔓 First time messaging the bot? Tap **Proceed to allow** when Cliq asks."
 3. Set phase to `submit`
 4. Store in game_data: `submissions: {}`
 
 ## Submit Phase
-1. Check each player's DM for their 3 statements
+1. Check the bot inbox (and each player's old DM chat) for their 3 statements. Send them as one multi-line message; the bot stores it for you even mid-solo-game
 2. Parse: look for "truth" and "lie" labels, or take the 3 lines they send
 3. Store in game_data.submissions: `{ user_id: { truths: [...], lie: "..." } }`
 4. When all submitted or deadline passed:
