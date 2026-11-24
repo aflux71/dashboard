@@ -5,7 +5,7 @@
     "unique_name": "gamemaster",
     "api_endpoint": "https://cliq.zoho.com/api/v2/bots/gamemaster/message"
   },
-  "total_rounds_played": 3,
+  "total_rounds_played": 5,
   "schedule": {
     "auto_start": true,
     "hours_between_games": 4,
@@ -23,197 +23,7 @@
     "registration_hours": 12,
     "default_phase_hours": 8
   },
-  "current_game": {
-    "type": "emoji_pictionary",
-    "round_number": 5,
-    "status": "active",
-    "phase": "draw_4",
-    "phase_started_at": "2026-11-24T21:40:00Z",
-    "phase_deadline": "2026-11-24T23:40:00Z",
-    "registered_players": [
-      {
-        "user_id": "927087872",
-        "name": "Allie Siblock"
-      },
-      {
-        "user_id": "925667633",
-        "name": "Jack Menna"
-      },
-      {
-        "user_id": "875533728",
-        "name": "Rachel Meighan"
-      },
-      {
-        "user_id": "926364682",
-        "name": "Theresa Boyd"
-      }
-    ],
-    "game_data": {
-      "rounds": [
-        {
-          "round": 1,
-          "category": "Food",
-          "prompt": "Poutine",
-          "accepted": [
-            "poutine"
-          ],
-          "artist_id": "925667633",
-          "artist": "Jack Menna",
-          "clue": "🥔🍁",
-          "guesses": {
-            "875533728": {
-              "name": "Rachel Meighan",
-              "guess": "poutine",
-              "correct": true,
-              "first": true,
-              "points": 15
-            },
-            "926364682": {
-              "name": "Theresa Boyd",
-              "guess": "Poutine",
-              "correct": true,
-              "first": false,
-              "points": 10
-            },
-            "931318108": {
-              "name": "Susan Achal",
-              "guess": "Poutine (Yum)",
-              "correct": true,
-              "first": false,
-              "points": 10,
-              "note": "not registered; channel guess accepted"
-            }
-          },
-          "status": "done",
-          "started_at": "2026-11-24T15:40:00Z",
-          "artist_deadline": "2026-11-24T16:40:00Z",
-          "clue_posted_at": "2026-11-24T16:30:49Z",
-          "artist_points": 10
-        },
-        {
-          "round": 2,
-          "category": "Animal",
-          "prompt": "Penguin",
-          "accepted": [
-            "penguin",
-            "penguins"
-          ],
-          "artist_id": "875533728",
-          "artist": "Rachel Meighan",
-          "clue": "⚫️⚪️❄️",
-          "guesses": {
-            "926364682": {
-              "name": "Theresa Boyd",
-              "guess": "Penguin",
-              "correct": true,
-              "first": true,
-              "points": 15
-            },
-            "931318108": {
-              "name": "Susan Achal",
-              "guess": "Penguin 🐧",
-              "correct": true,
-              "first": false,
-              "points": 10,
-              "note": "not registered; channel guess accepted"
-            },
-            "930774040": {
-              "name": "Pascal Vanderwalt",
-              "guess": "Penguin",
-              "correct": true,
-              "first": false,
-              "points": 10,
-              "note": "not registered; channel guess accepted"
-            }
-          },
-          "status": "done",
-          "started_at": "2026-11-24T17:40:00Z",
-          "artist_deadline": "2026-11-24T18:40:00Z",
-          "clue_posted_at": "2026-11-24T17:47:31Z",
-          "artist_points": 10
-        },
-        {
-          "round": 3,
-          "category": "Job",
-          "prompt": "Firefighter",
-          "accepted": [
-            "firefighter",
-            "fireman",
-            "fire fighter"
-          ],
-          "artist_id": "926364682",
-          "artist": "Theresa Boyd",
-          "clue": "💪💦🪜",
-          "guesses": {
-            "930774040": {
-              "name": "Pascal Vanderwalt",
-              "guess": "Diver",
-              "correct": false,
-              "points": 0
-            },
-            "875533728": {
-              "name": "Rachel Meighan",
-              "guess": "plumber",
-              "correct": false,
-              "points": 0
-            },
-            "931318108": {
-              "name": "Susan Achal",
-              "guess": "Roofer",
-              "correct": false,
-              "points": 0
-            }
-          },
-          "status": "done",
-          "started_at": "2026-11-24T19:40:00Z",
-          "artist_deadline": "2026-11-24T20:40:00Z",
-          "clue_posted_at": "2026-11-24T19:41:41Z",
-          "artist_points": 0
-        },
-        {
-          "round": 4,
-          "category": "Movie",
-          "prompt": "Finding Nemo",
-          "accepted": [
-            "finding nemo",
-            "nemo"
-          ],
-          "artist_id": "927087872",
-          "artist": "Allie Siblock",
-          "clue": null,
-          "guesses": {},
-          "status": "active",
-          "postponed_from": 1,
-          "postponed_reason": "Allie in school this morning (Theresa's request via bot inbox)",
-          "started_at": "2026-11-24T21:40:00Z",
-          "artist_deadline": "2026-11-24T22:40:00Z"
-        }
-      ],
-      "scores": {
-        "875533728": {
-          "name": "Rachel Meighan",
-          "points": 25
-        },
-        "926364682": {
-          "name": "Theresa Boyd",
-          "points": 25
-        },
-        "931318108": {
-          "name": "Susan Achal",
-          "points": 20
-        },
-        "925667633": {
-          "name": "Jack Menna",
-          "points": 10
-        },
-        "930774040": {
-          "name": "Pascal Vanderwalt",
-          "points": 10
-        }
-      },
-      "notes": "Artist prompts DMed via bot 13:40Z. 15:40Z: Allie (in school) had no clue posted; her Finding Nemo round moved to last (round 4), Jingle Bells dropped -> 4 rounds, one per player. Round 1 now Jack/Poutine. Round windows 2h; skip if artist silent 1h. Announced in channel as 'Round 2' (original numbering) — channel labels: Jack=Round 2, Rachel=Round 3, Theresa=Round 4, Allie=final round. 17:40Z: Jack's round (channel 'Round 2') done — clue 🥔🍁, Rachel first; Rachel's round (channel 'Round 3', Penguin) started, closes 19:40Z. 19:40Z: Rachel's round (channel 'Round 3') done — clue ⚫️⚪️❄️, Theresa first; Theresa's round (channel 'Round 4', Firefighter) started, closes 21:40Z. Category label first posted with a firefighter emoji (spoiler) — edited to 💼 within ~1 min. 21:40Z: Theresa's round (channel 'Round 4', Firefighter, clue 💪💦🪜) closed, nobody correct (Diver/plumber/Roofer), 0 pts. Allie's Final Round (Finding Nemo) started, closes 23:40Z; skip if no clue by 22:40Z. Theresa asked via inbox about adding emojis — told follow-up emojis are fair."
-    }
-  },
+  "current_game": null,
   "players": {
     "878083896": {
       "name": "Tracy Kent",
@@ -255,14 +65,19 @@
   "leaderboard": {
     "875533728": {
       "name": "Rachel Meighan",
-      "games": 1,
-      "wins": 1,
-      "points": 20,
+      "games": 2,
+      "wins": 2,
+      "points": 75,
       "by_type": {
         "spy": {
           "games": 1,
           "wins": 1,
           "points": 20
+        },
+        "emoji_pictionary": {
+          "games": 1,
+          "wins": 1,
+          "points": 55
         }
       }
     },
@@ -310,9 +125,9 @@
     },
     "926364682": {
       "name": "Theresa Boyd",
-      "games": 3,
+      "games": 4,
       "wins": 2,
-      "points": 130,
+      "points": 155,
       "by_type": {
         "spy": {
           "games": 1,
@@ -334,6 +149,11 @@
           "correct": 1,
           "firsts": 1,
           "points": 10
+        },
+        "emoji_pictionary": {
+          "games": 1,
+          "wins": 0,
+          "points": 25
         }
       }
     },
@@ -357,9 +177,9 @@
     },
     "927087872": {
       "name": "Allie Siblock",
-      "games": 3,
+      "games": 4,
       "wins": 1,
-      "points": 70,
+      "points": 80,
       "by_type": {
         "spy": {
           "games": 1,
@@ -375,14 +195,19 @@
           "games": 1,
           "wins": 1,
           "points": 45
+        },
+        "emoji_pictionary": {
+          "games": 1,
+          "wins": 0,
+          "points": 10
         }
       }
     },
     "930774040": {
       "name": "Pascal Vanderwalt",
-      "games": 1,
+      "games": 2,
       "wins": 0,
-      "points": 40,
+      "points": 65,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -394,27 +219,37 @@
           "correct": 1,
           "firsts": 0,
           "points": 5
+        },
+        "emoji_pictionary": {
+          "games": 1,
+          "wins": 0,
+          "points": 25
         }
       }
     },
     "931318108": {
       "name": "Susan Achal",
-      "games": 1,
+      "games": 2,
       "wins": 0,
-      "points": 15,
+      "points": 45,
       "by_type": {
         "trivia": {
           "games": 1,
           "wins": 0,
           "points": 15
+        },
+        "emoji_pictionary": {
+          "games": 1,
+          "wins": 0,
+          "points": 30
         }
       }
     },
     "925667633": {
       "name": "Jack Menna",
-      "games": 1,
+      "games": 2,
       "wins": 0,
-      "points": 15,
+      "points": 25,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -425,6 +260,11 @@
           "answered": 1,
           "correct": 1,
           "firsts": 1,
+          "points": 10
+        },
+        "emoji_pictionary": {
+          "games": 1,
+          "wins": 0,
           "points": 10
         }
       }
@@ -528,8 +368,8 @@
     "active": null,
     "history": []
   },
-  "last_game_completed_at": "2026-11-22T13:45:00Z",
-  "last_checked_at": "2026-11-24T21:40:00Z",
+  "last_game_completed_at": "2026-11-24T23:40:00Z",
+  "last_checked_at": "2026-11-24T23:40:00Z",
   "round_history": [
     {
       "round": 3,
@@ -554,6 +394,20 @@
       "type": "two_truths",
       "result": "cancelled — 3/4 min players (Tracy Kent, Theresa Boyd, Allie Siblock)",
       "completed_at": "2026-11-23T13:40:00Z"
+    },
+    {
+      "round": 5,
+      "type": "emoji_pictionary",
+      "result": "Rachel Meighan wins with 55 (incl. +20 bonus); Susan 30, Theresa 25, Pascal 25, Jack 10, Allie 10",
+      "final_scores": {
+        "875533728": 55,
+        "926364682": 25,
+        "931318108": 30,
+        "925667633": 10,
+        "930774040": 25,
+        "927087872": 10
+      },
+      "completed_at": "2026-11-24T23:40:00Z"
     }
   ]
 }
