@@ -28,8 +28,8 @@
     "round_number": 5,
     "status": "active",
     "phase": "draw_1",
-    "phase_started_at": "2026-11-24T13:40:00Z",
-    "phase_deadline": "2026-11-24T15:40:00Z",
+    "phase_started_at": "2026-11-24T15:40:00Z",
+    "phase_deadline": "2026-11-24T17:40:00Z",
     "registered_players": [
       {
         "user_id": "927087872",
@@ -52,22 +52,6 @@
       "rounds": [
         {
           "round": 1,
-          "category": "Movie",
-          "prompt": "Finding Nemo",
-          "accepted": [
-            "finding nemo",
-            "nemo"
-          ],
-          "artist_id": "927087872",
-          "artist": "Allie Siblock",
-          "clue": null,
-          "guesses": {},
-          "status": "active",
-          "started_at": "2026-11-24T13:40:00Z",
-          "artist_deadline": "2026-11-24T14:40:00Z"
-        },
-        {
-          "round": 2,
           "category": "Food",
           "prompt": "Poutine",
           "accepted": [
@@ -77,10 +61,12 @@
           "artist": "Jack Menna",
           "clue": null,
           "guesses": {},
-          "status": "pending"
+          "status": "active",
+          "started_at": "2026-11-24T15:40:00Z",
+          "artist_deadline": "2026-11-24T16:40:00Z"
         },
         {
-          "round": 3,
+          "round": 2,
           "category": "Animal",
           "prompt": "Penguin",
           "accepted": [
@@ -94,7 +80,7 @@
           "status": "pending"
         },
         {
-          "round": 4,
+          "round": 3,
           "category": "Job",
           "prompt": "Firefighter",
           "accepted": [
@@ -109,21 +95,24 @@
           "status": "pending"
         },
         {
-          "round": 5,
-          "category": "Song",
-          "prompt": "Jingle Bells",
+          "round": 4,
+          "category": "Movie",
+          "prompt": "Finding Nemo",
           "accepted": [
-            "jingle bells"
+            "finding nemo",
+            "nemo"
           ],
           "artist_id": "927087872",
           "artist": "Allie Siblock",
           "clue": null,
           "guesses": {},
-          "status": "pending"
+          "status": "pending",
+          "postponed_from": 1,
+          "postponed_reason": "Allie in school this morning (Theresa's request via bot inbox)"
         }
       ],
       "scores": {},
-      "notes": "Artist prompts DMed via bot 13:40Z; Allie has rounds 1 and 5. Round windows 2h; skip if artist silent 1h."
+      "notes": "Artist prompts DMed via bot 13:40Z. 15:40Z: Allie (in school) had no clue posted; her Finding Nemo round moved to last (round 4), Jingle Bells dropped -> 4 rounds, one per player. Round 1 now Jack/Poutine. Round windows 2h; skip if artist silent 1h. Announced in channel as 'Round 2' (original numbering) — channel labels: Jack=Round 2, Rachel=Round 3, Theresa=Round 4, Allie=final round."
     }
   },
   "players": {
@@ -396,8 +385,7 @@
         "Finding Nemo",
         "Poutine",
         "Penguin",
-        "Firefighter",
-        "Jingle Bells"
+        "Firefighter"
       ]
     },
     "price_is_right": {
@@ -411,7 +399,8 @@
     },
     "brain_teaser": {
       "teasers_used": [
-        "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?"
+        "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
+        "Number sequence: 3, 6, 11, 18, 27, ?"
       ]
     }
   },
@@ -426,16 +415,30 @@
     "post_window_end_hour": 15,
     "min_hours_between": 20,
     "answer_hours": 6,
-    "count": 1,
-    "last_posted_at": "2026-11-23T15:45:00Z",
-    "active": null
+    "count": 2,
+    "last_posted_at": "2026-11-24T15:40:00Z",
+    "active": {
+      "number": 2,
+      "category": "Number sequence",
+      "question": "What comes next? 3, 6, 11, 18, 27, ?",
+      "answer": "38",
+      "accepted_answers": [
+        "38",
+        "thirty-eight",
+        "thirty eight"
+      ],
+      "explanation": "The gaps grow by odd numbers: +3, +5, +7, +9, +11 (it's n² + 2).",
+      "posted_at": "2026-11-24T15:40:00Z",
+      "deadline": "2026-11-24T21:40:00Z",
+      "answers": {}
+    }
   },
   "challenges": {
     "active": null,
     "history": []
   },
   "last_game_completed_at": "2026-11-22T13:45:00Z",
-  "last_checked_at": "2026-11-24T13:41:00Z",
+  "last_checked_at": "2026-11-24T15:40:00Z",
   "round_history": [
     {
       "round": 3,
