@@ -26,10 +26,10 @@
   "current_game": {
     "type": "emoji_pictionary",
     "round_number": 5,
-    "status": "registration",
-    "phase": "registration",
-    "phase_started_at": "2026-11-23T17:40:00Z",
-    "phase_deadline": "2026-11-24T05:40:00Z",
+    "status": "active",
+    "phase": "draw_1",
+    "phase_started_at": "2026-11-24T13:40:00Z",
+    "phase_deadline": "2026-11-24T15:40:00Z",
     "registered_players": [
       {
         "user_id": "927087872",
@@ -48,7 +48,83 @@
         "name": "Theresa Boyd"
       }
     ],
-    "game_data": {}
+    "game_data": {
+      "rounds": [
+        {
+          "round": 1,
+          "category": "Movie",
+          "prompt": "Finding Nemo",
+          "accepted": [
+            "finding nemo",
+            "nemo"
+          ],
+          "artist_id": "927087872",
+          "artist": "Allie Siblock",
+          "clue": null,
+          "guesses": {},
+          "status": "active",
+          "started_at": "2026-11-24T13:40:00Z",
+          "artist_deadline": "2026-11-24T14:40:00Z"
+        },
+        {
+          "round": 2,
+          "category": "Food",
+          "prompt": "Poutine",
+          "accepted": [
+            "poutine"
+          ],
+          "artist_id": "925667633",
+          "artist": "Jack Menna",
+          "clue": null,
+          "guesses": {},
+          "status": "pending"
+        },
+        {
+          "round": 3,
+          "category": "Animal",
+          "prompt": "Penguin",
+          "accepted": [
+            "penguin",
+            "penguins"
+          ],
+          "artist_id": "875533728",
+          "artist": "Rachel Meighan",
+          "clue": null,
+          "guesses": {},
+          "status": "pending"
+        },
+        {
+          "round": 4,
+          "category": "Job",
+          "prompt": "Firefighter",
+          "accepted": [
+            "firefighter",
+            "fireman",
+            "fire fighter"
+          ],
+          "artist_id": "926364682",
+          "artist": "Theresa Boyd",
+          "clue": null,
+          "guesses": {},
+          "status": "pending"
+        },
+        {
+          "round": 5,
+          "category": "Song",
+          "prompt": "Jingle Bells",
+          "accepted": [
+            "jingle bells"
+          ],
+          "artist_id": "927087872",
+          "artist": "Allie Siblock",
+          "clue": null,
+          "guesses": {},
+          "status": "pending"
+        }
+      ],
+      "scores": {},
+      "notes": "Artist prompts DMed via bot 13:40Z; Allie has rounds 1 and 5. Round windows 2h; skip if artist silent 1h."
+    }
   },
   "players": {
     "878083896": {
@@ -316,7 +392,13 @@
       "statements_used": []
     },
     "emoji_pictionary": {
-      "prompts_used": []
+      "prompts_used": [
+        "Finding Nemo",
+        "Poutine",
+        "Penguin",
+        "Firefighter",
+        "Jingle Bells"
+      ]
     },
     "price_is_right": {
       "products_used": []
@@ -353,7 +435,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-22T13:45:00Z",
-  "last_checked_at": "2026-11-24T01:38:58Z",
+  "last_checked_at": "2026-11-24T13:41:00Z",
   "round_history": [
     {
       "round": 3,
