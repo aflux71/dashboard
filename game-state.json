@@ -439,7 +439,29 @@
       "explanation": "The word \"incorrectly\" is always spelled i-n-c-o-r-r-e-c-t-l-y in every dictionary.",
       "posted_at": "2026-11-25T15:40:00Z",
       "deadline": "2026-11-25T21:40:00Z",
-      "answers": {}
+      "answers": {
+        "930774040": {
+          "name": "Pascal Vanderwalt",
+          "answer": "incorrectly",
+          "correct": true,
+          "first": true,
+          "points": 10
+        },
+        "898015158": {
+          "name": "Mayar Nestoruk",
+          "answer": "incorrectly",
+          "correct": true,
+          "first": false,
+          "points": 5
+        },
+        "931318108": {
+          "name": "Susan Achal",
+          "answer": "incorrectly",
+          "correct": true,
+          "first": false,
+          "points": 5
+        }
+      }
     }
   },
   "challenges": {
@@ -447,7 +469,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-25T15:40:00Z",
+  "last_checked_at": "2026-11-25T17:40:00Z",
   "round_history": [
     {
       "round": 3,
