@@ -30,7 +30,32 @@
     "phase": "registration",
     "phase_started_at": "2026-11-25T13:39:00Z",
     "phase_deadline": "2026-11-26T01:39:00Z",
-    "registered_players": [],
+    "registered_players": [
+      {
+        "user_id": "930774040",
+        "name": "Pascal Vanderwalt"
+      },
+      {
+        "user_id": "931318108",
+        "name": "Susan Achal"
+      },
+      {
+        "user_id": "926364682",
+        "name": "Theresa Boyd"
+      },
+      {
+        "user_id": "875576566",
+        "name": "Melissa Achal"
+      },
+      {
+        "user_id": "937475665",
+        "name": "Jessica Heisler"
+      },
+      {
+        "user_id": "898015158",
+        "name": "Mayar Nestoruk"
+      }
+    ],
     "game_data": {}
   },
   "players": {
@@ -68,6 +93,14 @@
     },
     "925667633": {
       "name": "Jack Menna",
+      "dm_chat_id": null
+    },
+    "931318108": {
+      "name": "Susan Achal",
+      "dm_chat_id": null
+    },
+    "898015158": {
+      "name": "Mayar Nestoruk",
       "dm_chat_id": null
     }
   },
@@ -216,7 +249,7 @@
       "name": "Pascal Vanderwalt",
       "games": 2,
       "wins": 0,
-      "points": 65,
+      "points": 80,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -233,6 +266,10 @@
           "games": 1,
           "wins": 0,
           "points": 25
+        },
+        "solo": {
+          "played": 3,
+          "points": 15
         }
       }
     },
@@ -240,7 +277,7 @@
       "name": "Susan Achal",
       "games": 2,
       "wins": 0,
-      "points": 45,
+      "points": 70,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -251,6 +288,9 @@
           "games": 1,
           "wins": 0,
           "points": 30
+        },
+        "battleship": {
+          "points": 25
         }
       }
     },
@@ -304,6 +344,21 @@
           "points": 5
         }
       }
+    },
+    "898015158": {
+      "name": "Mayar Nestoruk",
+      "games": 0,
+      "wins": 0,
+      "points": 25,
+      "by_type": {
+        "battleship": {
+          "points": 5
+        },
+        "solo": {
+          "played": 4,
+          "points": 20
+        }
+      }
     }
   },
   "used_assets": {
@@ -354,7 +409,8 @@
     "brain_teaser": {
       "teasers_used": [
         "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
-        "Number sequence: 3, 6, 11, 18, 27, ?"
+        "Number sequence: 3, 6, 11, 18, 27, ?",
+        "What word is spelled incorrectly in every single dictionary?"
       ]
     }
   },
@@ -369,16 +425,29 @@
     "post_window_end_hour": 15,
     "min_hours_between": 20,
     "answer_hours": 6,
-    "count": 2,
-    "last_posted_at": "2026-11-24T15:40:00Z",
-    "active": null
+    "count": 3,
+    "last_posted_at": "2026-11-25T15:40:00Z",
+    "active": {
+      "number": 3,
+      "category": "Word puzzle",
+      "question": "What word is spelled incorrectly in every single dictionary?",
+      "answer": "Incorrectly",
+      "accepted_answers": [
+        "incorrectly",
+        "the word incorrectly"
+      ],
+      "explanation": "The word \"incorrectly\" is always spelled i-n-c-o-r-r-e-c-t-l-y in every dictionary.",
+      "posted_at": "2026-11-25T15:40:00Z",
+      "deadline": "2026-11-25T21:40:00Z",
+      "answers": {}
+    }
   },
   "challenges": {
     "active": null,
     "history": []
   },
   "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-25T13:40:00Z",
+  "last_checked_at": "2026-11-25T15:40:00Z",
   "round_history": [
     {
       "round": 3,
