@@ -249,7 +249,7 @@
       "name": "Pascal Vanderwalt",
       "games": 2,
       "wins": 0,
-      "points": 80,
+      "points": 95,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -257,10 +257,10 @@
           "points": 35
         },
         "brain_teaser": {
-          "answered": 1,
-          "correct": 1,
-          "firsts": 0,
-          "points": 5
+          "answered": 2,
+          "correct": 2,
+          "firsts": 1,
+          "points": 15
         },
         "emoji_pictionary": {
           "games": 1,
@@ -268,8 +268,8 @@
           "points": 25
         },
         "solo": {
-          "played": 3,
-          "points": 15
+          "played": 4,
+          "points": 20
         }
       }
     },
@@ -277,7 +277,7 @@
       "name": "Susan Achal",
       "games": 2,
       "wins": 0,
-      "points": 70,
+      "points": 75,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -291,6 +291,12 @@
         },
         "battleship": {
           "points": 25
+        },
+        "brain_teaser": {
+          "answered": 1,
+          "correct": 1,
+          "firsts": 0,
+          "points": 5
         }
       }
     },
@@ -349,7 +355,7 @@
       "name": "Mayar Nestoruk",
       "games": 0,
       "wins": 0,
-      "points": 25,
+      "points": 30,
       "by_type": {
         "battleship": {
           "points": 5
@@ -357,6 +363,12 @@
         "solo": {
           "played": 4,
           "points": 20
+        },
+        "brain_teaser": {
+          "answered": 1,
+          "correct": 1,
+          "firsts": 0,
+          "points": 5
         }
       }
     }
@@ -427,49 +439,14 @@
     "answer_hours": 6,
     "count": 3,
     "last_posted_at": "2026-11-25T15:40:00Z",
-    "active": {
-      "number": 3,
-      "category": "Word puzzle",
-      "question": "What word is spelled incorrectly in every single dictionary?",
-      "answer": "Incorrectly",
-      "accepted_answers": [
-        "incorrectly",
-        "the word incorrectly"
-      ],
-      "explanation": "The word \"incorrectly\" is always spelled i-n-c-o-r-r-e-c-t-l-y in every dictionary.",
-      "posted_at": "2026-11-25T15:40:00Z",
-      "deadline": "2026-11-25T21:40:00Z",
-      "answers": {
-        "930774040": {
-          "name": "Pascal Vanderwalt",
-          "answer": "incorrectly",
-          "correct": true,
-          "first": true,
-          "points": 10
-        },
-        "898015158": {
-          "name": "Mayar Nestoruk",
-          "answer": "incorrectly",
-          "correct": true,
-          "first": false,
-          "points": 5
-        },
-        "931318108": {
-          "name": "Susan Achal",
-          "answer": "incorrectly",
-          "correct": true,
-          "first": false,
-          "points": 5
-        }
-      }
-    }
+    "active": null
   },
   "challenges": {
     "active": null,
     "history": []
   },
   "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-25T19:40:00Z",
+  "last_checked_at": "2026-11-25T21:40:00Z",
   "round_history": [
     {
       "round": 3,
