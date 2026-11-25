@@ -19,11 +19,20 @@
       "would_you_rather",
       "hangman"
     ],
-    "rotation_index": 5,
+    "rotation_index": 6,
     "registration_hours": 12,
     "default_phase_hours": 8
   },
-  "current_game": null,
+  "current_game": {
+    "type": "price_is_right",
+    "round_number": 6,
+    "status": "registration",
+    "phase": "registration",
+    "phase_started_at": "2026-11-25T13:39:00Z",
+    "phase_deadline": "2026-11-26T01:39:00Z",
+    "registered_players": [],
+    "game_data": {}
+  },
   "players": {
     "878083896": {
       "name": "Tracy Kent",
@@ -369,7 +378,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-25T01:38:00Z",
+  "last_checked_at": "2026-11-25T13:40:00Z",
   "round_history": [
     {
       "round": 3,
