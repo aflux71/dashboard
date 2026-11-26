@@ -27,9 +27,9 @@
     "type": "price_is_right",
     "round_number": 6,
     "status": "active",
-    "phase": "price_1",
-    "phase_started_at": "2026-11-26T01:40:00Z",
-    "phase_deadline": "2026-11-26T15:39:00Z",
+    "phase": "price_2",
+    "phase_started_at": "2026-11-26T15:40:00Z",
+    "phase_deadline": "2026-11-26T17:40:00Z",
     "registered_players": [
       {
         "user_id": "930774040",
@@ -89,7 +89,7 @@
           "category": "Fun"
         }
       ],
-      "current_product": 1,
+      "current_product": 2,
       "price_note": "US MSRP; overnight round 1 extended to 10:39am Toronto",
       "guesses": {
         "1": {
@@ -108,6 +108,10 @@
           "875576566": {
             "name": "Melissa Achal",
             "guess": 229.99
+          },
+          "931318108": {
+            "name": "Susan Achal",
+            "guess": 230.0
           }
         },
         "2": {},
@@ -115,14 +119,50 @@
         "4": {},
         "5": {}
       },
-      "product_results": {},
-      "scores": {},
+      "product_results": {
+        "1": {
+          "actual_price": 249.0,
+          "winner": "926364682",
+          "winner_name": "Theresa Boyd",
+          "winning_guess": 240.0,
+          "within_10pct": true,
+          "exact": false,
+          "points": {
+            "926364682": 40,
+            "931318108": 5,
+            "875576566": 5,
+            "937475665": 5,
+            "898015158": 5
+          }
+        }
+      },
+      "scores": {
+        "926364682": 40,
+        "931318108": 5,
+        "875576566": 5,
+        "937475665": 5,
+        "898015158": 5
+      },
       "unregistered_guesses": {
         "1": {
           "878083896": {
             "name": "Tracy Kent",
             "guess": 249.0,
             "note": "not signed up; posted 77s after product went up"
+          },
+          "875533728": {
+            "name": "Rachel Meighan",
+            "guess": 250.0,
+            "note": "not signed up"
+          }
+        }
+      },
+      "ignored_repeat_guesses": {
+        "1": {
+          "875576566": {
+            "name": "Melissa Achal",
+            "guess": 219.99,
+            "note": "second guess; first (229.99) counts"
           }
         }
       }
@@ -492,7 +532,8 @@
       "teasers_used": [
         "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
         "Number sequence: 3, 6, 11, 18, 27, ?",
-        "What word is spelled incorrectly in every single dictionary?"
+        "What word is spelled incorrectly in every single dictionary?",
+        "A lavender patch doubles in size every day and covers the whole field in 30 days. On which day was it half covered?"
       ]
     }
   },
@@ -507,16 +548,31 @@
     "post_window_end_hour": 15,
     "min_hours_between": 20,
     "answer_hours": 6,
-    "count": 3,
-    "last_posted_at": "2026-11-25T15:40:00Z",
-    "active": null
+    "count": 4,
+    "last_posted_at": "2026-11-26T15:40:00Z",
+    "active": {
+      "number": 4,
+      "category": "Quick math",
+      "question": "A lavender patch on the farm doubles in size every day. It takes 30 days to cover the whole field. On which day was the field half covered?",
+      "answer": "Day 29",
+      "accepted_answers": [
+        "29",
+        "day 29",
+        "the 29th day",
+        "29th"
+      ],
+      "explanation": "It doubles every day, so it was half the size the day before it was full.",
+      "posted_at": "2026-11-26T15:40:00Z",
+      "deadline": "2026-11-26T21:39:00Z",
+      "answers": {}
+    }
   },
   "challenges": {
     "active": null,
     "history": []
   },
   "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-26T13:40:00Z",
+  "last_checked_at": "2026-11-26T15:40:00Z",
   "round_history": [
     {
       "round": 3,
