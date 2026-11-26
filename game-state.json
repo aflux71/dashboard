@@ -27,9 +27,9 @@
     "type": "price_is_right",
     "round_number": 6,
     "status": "active",
-    "phase": "price_3",
-    "phase_started_at": "2026-11-26T17:41:00Z",
-    "phase_deadline": "2026-11-26T19:41:00Z",
+    "phase": "price_4",
+    "phase_started_at": "2026-11-26T19:41:00Z",
+    "phase_deadline": "2026-11-26T21:41:00Z",
     "registered_players": [
       {
         "user_id": "930774040",
@@ -89,7 +89,7 @@
           "category": "Fun"
         }
       ],
-      "current_product": 3,
+      "current_product": 4,
       "price_note": "US MSRP; overnight round 1 extended to 10:39am Toronto",
       "guesses": {
         "1": {
@@ -128,7 +128,20 @@
             "guess": 110.99
           }
         },
-        "3": {},
+        "3": {
+          "937475665": {
+            "name": "Jessica Heisler",
+            "guess": 49.99
+          },
+          "875576566": {
+            "name": "Melissa Achal",
+            "guess": 50.0
+          },
+          "898015158": {
+            "name": "Mayar Nestoruk",
+            "guess": 38.99
+          }
+        },
         "4": {},
         "5": {}
       },
@@ -161,14 +174,28 @@
             "937475665": 5,
             "898015158": 5
           }
+        },
+        "3": {
+          "actual_price": 35.0,
+          "winner": "898015158",
+          "winner_name": "Mayar Nestoruk",
+          "winning_guess": 38.99,
+          "everyone_over": true,
+          "within_10pct": false,
+          "exact": false,
+          "points": {
+            "898015158": 10,
+            "937475665": 5,
+            "875576566": 5
+          }
         }
       },
       "scores": {
         "926364682": 50,
         "931318108": 5,
-        "875576566": 5,
-        "937475665": 10,
-        "898015158": 10
+        "875576566": 10,
+        "937475665": 15,
+        "898015158": 20
       },
       "unregistered_guesses": {
         "1": {
@@ -614,7 +641,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-26T17:41:00Z",
+  "last_checked_at": "2026-11-26T19:41:00Z",
   "round_history": [
     {
       "round": 3,
