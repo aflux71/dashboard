@@ -27,9 +27,9 @@
     "type": "price_is_right",
     "round_number": 6,
     "status": "active",
-    "phase": "price_2",
-    "phase_started_at": "2026-11-26T15:40:00Z",
-    "phase_deadline": "2026-11-26T17:40:00Z",
+    "phase": "price_3",
+    "phase_started_at": "2026-11-26T17:41:00Z",
+    "phase_deadline": "2026-11-26T19:41:00Z",
     "registered_players": [
       {
         "user_id": "930774040",
@@ -89,7 +89,7 @@
           "category": "Fun"
         }
       ],
-      "current_product": 2,
+      "current_product": 3,
       "price_note": "US MSRP; overnight round 1 extended to 10:39am Toronto",
       "guesses": {
         "1": {
@@ -114,7 +114,20 @@
             "guess": 230.0
           }
         },
-        "2": {},
+        "2": {
+          "937475665": {
+            "name": "Jessica Heisler",
+            "guess": 112.99
+          },
+          "926364682": {
+            "name": "Theresa Boyd",
+            "guess": 107.0
+          },
+          "898015158": {
+            "name": "Mayar Nestoruk",
+            "guess": 110.99
+          }
+        },
         "3": {},
         "4": {},
         "5": {}
@@ -134,14 +147,28 @@
             "937475665": 5,
             "898015158": 5
           }
+        },
+        "2": {
+          "actual_price": 98.0,
+          "winner": "926364682",
+          "winner_name": "Theresa Boyd",
+          "winning_guess": 107.0,
+          "everyone_over": true,
+          "within_10pct": false,
+          "exact": false,
+          "points": {
+            "926364682": 10,
+            "937475665": 5,
+            "898015158": 5
+          }
         }
       },
       "scores": {
-        "926364682": 40,
+        "926364682": 50,
         "931318108": 5,
         "875576566": 5,
-        "937475665": 5,
-        "898015158": 5
+        "937475665": 10,
+        "898015158": 10
       },
       "unregistered_guesses": {
         "1": {
@@ -564,7 +591,22 @@
       "explanation": "It doubles every day, so it was half the size the day before it was full.",
       "posted_at": "2026-11-26T15:40:00Z",
       "deadline": "2026-11-26T21:39:00Z",
-      "answers": {}
+      "answers": {
+        "930774040": {
+          "name": "Pascal Vanderwalt",
+          "answer": "Day 29",
+          "correct": true,
+          "first": true,
+          "points": 10
+        },
+        "898015158": {
+          "name": "Mayar Nestoruk",
+          "answer": "day 29",
+          "correct": true,
+          "first": false,
+          "points": 5
+        }
+      }
     }
   },
   "challenges": {
@@ -572,7 +614,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-26T15:40:00Z",
+  "last_checked_at": "2026-11-26T17:41:00Z",
   "round_history": [
     {
       "round": 3,
