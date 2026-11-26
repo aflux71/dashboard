@@ -27,9 +27,9 @@
     "type": "price_is_right",
     "round_number": 6,
     "status": "active",
-    "phase": "price_4",
-    "phase_started_at": "2026-11-26T19:41:00Z",
-    "phase_deadline": "2026-11-26T21:41:00Z",
+    "phase": "price_5",
+    "phase_started_at": "2026-11-26T21:45:00Z",
+    "phase_deadline": "2026-11-26T23:45:00Z",
     "registered_players": [
       {
         "user_id": "930774040",
@@ -89,7 +89,7 @@
           "category": "Fun"
         }
       ],
-      "current_product": 4,
+      "current_product": 5,
       "price_note": "US MSRP; overnight round 1 extended to 10:39am Toronto",
       "guesses": {
         "1": {
@@ -142,7 +142,24 @@
             "guess": 38.99
           }
         },
-        "4": {},
+        "4": {
+          "875576566": {
+            "name": "Melissa Achal",
+            "guess": 170.0
+          },
+          "898015158": {
+            "name": "Mayar Nestoruk",
+            "guess": 125.0
+          },
+          "937475665": {
+            "name": "Jessica Heisler",
+            "guess": 189.99
+          },
+          "926364682": {
+            "name": "Theresa Boyd",
+            "guess": 177.0
+          }
+        },
         "5": {}
       },
       "product_results": {
@@ -188,14 +205,28 @@
             "937475665": 5,
             "875576566": 5
           }
+        },
+        "4": {
+          "actual_price": 159.99,
+          "winner": "898015158",
+          "winner_name": "Mayar Nestoruk",
+          "winning_guess": 125.0,
+          "within_10pct": false,
+          "exact": false,
+          "points": {
+            "898015158": 25,
+            "875576566": 5,
+            "937475665": 5,
+            "926364682": 5
+          }
         }
       },
       "scores": {
-        "926364682": 50,
+        "926364682": 55,
         "931318108": 5,
-        "875576566": 10,
-        "937475665": 15,
-        "898015158": 20
+        "875576566": 15,
+        "937475665": 20,
+        "898015158": 45
       },
       "unregistered_guesses": {
         "1": {
@@ -413,7 +444,7 @@
       "name": "Pascal Vanderwalt",
       "games": 2,
       "wins": 0,
-      "points": 95,
+      "points": 105,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -421,10 +452,10 @@
           "points": 35
         },
         "brain_teaser": {
-          "answered": 2,
-          "correct": 2,
-          "firsts": 1,
-          "points": 15
+          "answered": 3,
+          "correct": 3,
+          "firsts": 2,
+          "points": 25
         },
         "emoji_pictionary": {
           "games": 1,
@@ -519,7 +550,7 @@
       "name": "Mayar Nestoruk",
       "games": 0,
       "wins": 0,
-      "points": 30,
+      "points": 35,
       "by_type": {
         "battleship": {
           "points": 5
@@ -529,10 +560,10 @@
           "points": 20
         },
         "brain_teaser": {
-          "answered": 1,
-          "correct": 1,
+          "answered": 2,
+          "correct": 2,
           "firsts": 0,
-          "points": 5
+          "points": 10
         }
       }
     }
@@ -604,44 +635,14 @@
     "answer_hours": 6,
     "count": 4,
     "last_posted_at": "2026-11-26T15:40:00Z",
-    "active": {
-      "number": 4,
-      "category": "Quick math",
-      "question": "A lavender patch on the farm doubles in size every day. It takes 30 days to cover the whole field. On which day was the field half covered?",
-      "answer": "Day 29",
-      "accepted_answers": [
-        "29",
-        "day 29",
-        "the 29th day",
-        "29th"
-      ],
-      "explanation": "It doubles every day, so it was half the size the day before it was full.",
-      "posted_at": "2026-11-26T15:40:00Z",
-      "deadline": "2026-11-26T21:39:00Z",
-      "answers": {
-        "930774040": {
-          "name": "Pascal Vanderwalt",
-          "answer": "Day 29",
-          "correct": true,
-          "first": true,
-          "points": 10
-        },
-        "898015158": {
-          "name": "Mayar Nestoruk",
-          "answer": "day 29",
-          "correct": true,
-          "first": false,
-          "points": 5
-        }
-      }
-    }
+    "active": null
   },
   "challenges": {
     "active": null,
     "history": []
   },
   "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-26T19:41:00Z",
+  "last_checked_at": "2026-11-26T21:45:00Z",
   "round_history": [
     {
       "round": 3,
