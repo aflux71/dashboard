@@ -92,14 +92,40 @@
       "current_product": 1,
       "price_note": "US MSRP; overnight round 1 extended to 10:39am Toronto",
       "guesses": {
-        "1": {},
+        "1": {
+          "898015158": {
+            "name": "Mayar Nestoruk",
+            "guess": 289.99
+          },
+          "926364682": {
+            "name": "Theresa Boyd",
+            "guess": 240.0
+          },
+          "937475665": {
+            "name": "Jessica Heisler",
+            "guess": 279.99
+          },
+          "875576566": {
+            "name": "Melissa Achal",
+            "guess": 229.99
+          }
+        },
         "2": {},
         "3": {},
         "4": {},
         "5": {}
       },
       "product_results": {},
-      "scores": {}
+      "scores": {},
+      "unregistered_guesses": {
+        "1": {
+          "878083896": {
+            "name": "Tracy Kent",
+            "guess": 249.0,
+            "note": "not signed up; posted 77s after product went up"
+          }
+        }
+      }
     }
   },
   "players": {
@@ -490,7 +516,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-26T01:40:00Z",
+  "last_checked_at": "2026-11-26T13:40:00Z",
   "round_history": [
     {
       "round": 3,
