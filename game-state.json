@@ -26,10 +26,10 @@
   "current_game": {
     "type": "price_is_right",
     "round_number": 6,
-    "status": "registration",
-    "phase": "registration",
-    "phase_started_at": "2026-11-25T13:39:00Z",
-    "phase_deadline": "2026-11-26T01:39:00Z",
+    "status": "active",
+    "phase": "price_1",
+    "phase_started_at": "2026-11-26T01:40:00Z",
+    "phase_deadline": "2026-11-26T15:39:00Z",
     "registered_players": [
       {
         "user_id": "930774040",
@@ -56,7 +56,51 @@
         "name": "Mayar Nestoruk"
       }
     ],
-    "game_data": {}
+    "game_data": {
+      "products": [
+        {
+          "name": "Apple AirPods Pro 3",
+          "description": "Apple's newest noise-cancelling earbuds (2025) with heart-rate sensing and live translation.",
+          "actual_price": 249.0,
+          "category": "Electronics"
+        },
+        {
+          "name": "lululemon Align High-Rise Pant 25\"",
+          "description": "The cult-favourite buttery-soft yoga leggings.",
+          "actual_price": 98.0,
+          "category": "Clothing"
+        },
+        {
+          "name": "YETI Rambler 20 oz Tumbler with MagSlider Lid",
+          "description": "Stainless steel, double-wall vacuum insulated tumbler.",
+          "actual_price": 35.0,
+          "category": "Household"
+        },
+        {
+          "name": "Amazon Kindle Paperwhite (12th gen, 16GB, with ads)",
+          "description": "Waterproof e-reader with a 7\" glare-free screen.",
+          "actual_price": 159.99,
+          "category": "Electronics"
+        },
+        {
+          "name": "Nintendo Switch 2 (console only)",
+          "description": "Nintendo's 2025 console, no game bundle.",
+          "actual_price": 449.99,
+          "category": "Fun"
+        }
+      ],
+      "current_product": 1,
+      "price_note": "US MSRP; overnight round 1 extended to 10:39am Toronto",
+      "guesses": {
+        "1": {},
+        "2": {},
+        "3": {},
+        "4": {},
+        "5": {}
+      },
+      "product_results": {},
+      "scores": {}
+    }
   },
   "players": {
     "878083896": {
@@ -446,7 +490,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-25T23:40:00Z",
+  "last_checked_at": "2026-11-26T01:40:00Z",
   "round_history": [
     {
       "round": 3,
