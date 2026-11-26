@@ -5,7 +5,7 @@
     "unique_name": "gamemaster",
     "api_endpoint": "https://cliq.zoho.com/api/v2/bots/gamemaster/message"
   },
-  "total_rounds_played": 5,
+  "total_rounds_played": 6,
   "schedule": {
     "auto_start": true,
     "hours_between_games": 4,
@@ -23,236 +23,7 @@
     "registration_hours": 12,
     "default_phase_hours": 8
   },
-  "current_game": {
-    "type": "price_is_right",
-    "round_number": 6,
-    "status": "active",
-    "phase": "price_5",
-    "phase_started_at": "2026-11-26T21:45:00Z",
-    "phase_deadline": "2026-11-26T23:45:00Z",
-    "registered_players": [
-      {
-        "user_id": "930774040",
-        "name": "Pascal Vanderwalt"
-      },
-      {
-        "user_id": "931318108",
-        "name": "Susan Achal"
-      },
-      {
-        "user_id": "926364682",
-        "name": "Theresa Boyd"
-      },
-      {
-        "user_id": "875576566",
-        "name": "Melissa Achal"
-      },
-      {
-        "user_id": "937475665",
-        "name": "Jessica Heisler"
-      },
-      {
-        "user_id": "898015158",
-        "name": "Mayar Nestoruk"
-      }
-    ],
-    "game_data": {
-      "products": [
-        {
-          "name": "Apple AirPods Pro 3",
-          "description": "Apple's newest noise-cancelling earbuds (2025) with heart-rate sensing and live translation.",
-          "actual_price": 249.0,
-          "category": "Electronics"
-        },
-        {
-          "name": "lululemon Align High-Rise Pant 25\"",
-          "description": "The cult-favourite buttery-soft yoga leggings.",
-          "actual_price": 98.0,
-          "category": "Clothing"
-        },
-        {
-          "name": "YETI Rambler 20 oz Tumbler with MagSlider Lid",
-          "description": "Stainless steel, double-wall vacuum insulated tumbler.",
-          "actual_price": 35.0,
-          "category": "Household"
-        },
-        {
-          "name": "Amazon Kindle Paperwhite (12th gen, 16GB, with ads)",
-          "description": "Waterproof e-reader with a 7\" glare-free screen.",
-          "actual_price": 159.99,
-          "category": "Electronics"
-        },
-        {
-          "name": "Nintendo Switch 2 (console only)",
-          "description": "Nintendo's 2025 console, no game bundle.",
-          "actual_price": 449.99,
-          "category": "Fun"
-        }
-      ],
-      "current_product": 5,
-      "price_note": "US MSRP; overnight round 1 extended to 10:39am Toronto",
-      "guesses": {
-        "1": {
-          "898015158": {
-            "name": "Mayar Nestoruk",
-            "guess": 289.99
-          },
-          "926364682": {
-            "name": "Theresa Boyd",
-            "guess": 240.0
-          },
-          "937475665": {
-            "name": "Jessica Heisler",
-            "guess": 279.99
-          },
-          "875576566": {
-            "name": "Melissa Achal",
-            "guess": 229.99
-          },
-          "931318108": {
-            "name": "Susan Achal",
-            "guess": 230.0
-          }
-        },
-        "2": {
-          "937475665": {
-            "name": "Jessica Heisler",
-            "guess": 112.99
-          },
-          "926364682": {
-            "name": "Theresa Boyd",
-            "guess": 107.0
-          },
-          "898015158": {
-            "name": "Mayar Nestoruk",
-            "guess": 110.99
-          }
-        },
-        "3": {
-          "937475665": {
-            "name": "Jessica Heisler",
-            "guess": 49.99
-          },
-          "875576566": {
-            "name": "Melissa Achal",
-            "guess": 50.0
-          },
-          "898015158": {
-            "name": "Mayar Nestoruk",
-            "guess": 38.99
-          }
-        },
-        "4": {
-          "875576566": {
-            "name": "Melissa Achal",
-            "guess": 170.0
-          },
-          "898015158": {
-            "name": "Mayar Nestoruk",
-            "guess": 125.0
-          },
-          "937475665": {
-            "name": "Jessica Heisler",
-            "guess": 189.99
-          },
-          "926364682": {
-            "name": "Theresa Boyd",
-            "guess": 177.0
-          }
-        },
-        "5": {}
-      },
-      "product_results": {
-        "1": {
-          "actual_price": 249.0,
-          "winner": "926364682",
-          "winner_name": "Theresa Boyd",
-          "winning_guess": 240.0,
-          "within_10pct": true,
-          "exact": false,
-          "points": {
-            "926364682": 40,
-            "931318108": 5,
-            "875576566": 5,
-            "937475665": 5,
-            "898015158": 5
-          }
-        },
-        "2": {
-          "actual_price": 98.0,
-          "winner": "926364682",
-          "winner_name": "Theresa Boyd",
-          "winning_guess": 107.0,
-          "everyone_over": true,
-          "within_10pct": false,
-          "exact": false,
-          "points": {
-            "926364682": 10,
-            "937475665": 5,
-            "898015158": 5
-          }
-        },
-        "3": {
-          "actual_price": 35.0,
-          "winner": "898015158",
-          "winner_name": "Mayar Nestoruk",
-          "winning_guess": 38.99,
-          "everyone_over": true,
-          "within_10pct": false,
-          "exact": false,
-          "points": {
-            "898015158": 10,
-            "937475665": 5,
-            "875576566": 5
-          }
-        },
-        "4": {
-          "actual_price": 159.99,
-          "winner": "898015158",
-          "winner_name": "Mayar Nestoruk",
-          "winning_guess": 125.0,
-          "within_10pct": false,
-          "exact": false,
-          "points": {
-            "898015158": 25,
-            "875576566": 5,
-            "937475665": 5,
-            "926364682": 5
-          }
-        }
-      },
-      "scores": {
-        "926364682": 55,
-        "931318108": 5,
-        "875576566": 15,
-        "937475665": 20,
-        "898015158": 45
-      },
-      "unregistered_guesses": {
-        "1": {
-          "878083896": {
-            "name": "Tracy Kent",
-            "guess": 249.0,
-            "note": "not signed up; posted 77s after product went up"
-          },
-          "875533728": {
-            "name": "Rachel Meighan",
-            "guess": 250.0,
-            "note": "not signed up"
-          }
-        }
-      },
-      "ignored_repeat_guesses": {
-        "1": {
-          "875576566": {
-            "name": "Melissa Achal",
-            "guess": 219.99,
-            "note": "second guess; first (229.99) counts"
-          }
-        }
-      }
-    }
-  },
+  "current_game": null,
   "players": {
     "878083896": {
       "name": "Tracy Kent",
@@ -349,22 +120,27 @@
     },
     "875576566": {
       "name": "Melissa Achal",
-      "games": 1,
+      "games": 2,
       "wins": 0,
-      "points": 0,
+      "points": 15,
       "by_type": {
         "spy": {
           "games": 1,
           "wins": 0,
           "points": 0
+        },
+        "price_is_right": {
+          "games": 1,
+          "wins": 0,
+          "points": 15
         }
       }
     },
     "926364682": {
       "name": "Theresa Boyd",
-      "games": 4,
-      "wins": 2,
-      "points": 155,
+      "games": 5,
+      "wins": 3,
+      "points": 265,
       "by_type": {
         "spy": {
           "games": 1,
@@ -391,14 +167,19 @@
           "games": 1,
           "wins": 0,
           "points": 25
+        },
+        "price_is_right": {
+          "games": 1,
+          "wins": 1,
+          "points": 110
         }
       }
     },
     "937475665": {
       "name": "Jessica Heisler",
-      "games": 2,
+      "games": 3,
       "wins": 0,
-      "points": 45,
+      "points": 65,
       "by_type": {
         "spy": {
           "games": 1,
@@ -409,6 +190,11 @@
           "games": 1,
           "wins": 0,
           "points": 45
+        },
+        "price_is_right": {
+          "games": 1,
+          "wins": 0,
+          "points": 20
         }
       }
     },
@@ -470,9 +256,9 @@
     },
     "931318108": {
       "name": "Susan Achal",
-      "games": 2,
+      "games": 3,
       "wins": 0,
-      "points": 75,
+      "points": 80,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -491,6 +277,11 @@
           "answered": 1,
           "correct": 1,
           "firsts": 0,
+          "points": 5
+        },
+        "price_is_right": {
+          "games": 1,
+          "wins": 0,
           "points": 5
         }
       }
@@ -548,9 +339,9 @@
     },
     "898015158": {
       "name": "Mayar Nestoruk",
-      "games": 0,
+      "games": 1,
       "wins": 0,
-      "points": 35,
+      "points": 80,
       "by_type": {
         "battleship": {
           "points": 5
@@ -564,6 +355,11 @@
           "correct": 2,
           "firsts": 0,
           "points": 10
+        },
+        "price_is_right": {
+          "games": 1,
+          "wins": 0,
+          "points": 45
         }
       }
     }
@@ -605,7 +401,13 @@
       ]
     },
     "price_is_right": {
-      "products_used": []
+      "products_used": [
+        "Apple AirPods Pro 3",
+        "lululemon Align High-Rise Pant 25\"",
+        "YETI Rambler 20 oz Tumbler with MagSlider Lid",
+        "Amazon Kindle Paperwhite (12th gen, 16GB, with ads)",
+        "Nintendo Switch 2 (console only)"
+      ]
     },
     "would_you_rather": {
       "dilemmas_used": []
@@ -641,8 +443,8 @@
     "active": null,
     "history": []
   },
-  "last_game_completed_at": "2026-11-24T23:40:00Z",
-  "last_checked_at": "2026-11-26T21:45:00Z",
+  "last_game_completed_at": "2026-11-26T23:40:00Z",
+  "last_checked_at": "2026-11-26T23:40:00Z",
   "round_history": [
     {
       "round": 3,
@@ -681,6 +483,19 @@
         "927087872": 10
       },
       "completed_at": "2026-11-24T23:40:00Z"
+    },
+    {
+      "round": 6,
+      "type": "price_is_right",
+      "result": "Theresa Boyd wins with 110 (won 3 of 5 products, +15 winner bonus, Best Instinct); Mayar 45, Jessica 20, Melissa 15, Susan 5, Pascal 0 (no guesses)",
+      "final_scores": {
+        "926364682": 110,
+        "931318108": 5,
+        "875576566": 15,
+        "937475665": 20,
+        "898015158": 45
+      },
+      "completed_at": "2026-11-26T23:40:00Z"
     }
   ]
 }
