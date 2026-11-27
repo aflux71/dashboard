@@ -30,7 +30,16 @@
     "phase": "registration",
     "phase_started_at": "2026-11-27T13:40:00Z",
     "phase_deadline": "2026-11-28T01:40:00Z",
-    "registered_players": [],
+    "registered_players": [
+      {
+        "user_id": "931318108",
+        "name": "Susan Achal"
+      },
+      {
+        "user_id": "925667633",
+        "name": "Jack Menna"
+      }
+    ],
     "game_data": {}
   },
   "players": {
@@ -239,7 +248,7 @@
       "name": "Pascal Vanderwalt",
       "games": 2,
       "wins": 0,
-      "points": 105,
+      "points": 110,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -260,6 +269,9 @@
         "solo": {
           "played": 4,
           "points": 20
+        },
+        "battleship": {
+          "points": 5
         }
       }
     },
@@ -429,7 +441,8 @@
         "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
         "Number sequence: 3, 6, 11, 18, 27, ?",
         "What word is spelled incorrectly in every single dictionary?",
-        "A lavender patch doubles in size every day and covers the whole field in 30 days. On which day was it half covered?"
+        "A lavender patch doubles in size every day and covers the whole field in 30 days. On which day was it half covered?",
+        "The more I dry, the wetter I get. What am I?"
       ]
     }
   },
@@ -444,16 +457,32 @@
     "post_window_end_hour": 15,
     "min_hours_between": 20,
     "answer_hours": 6,
-    "count": 4,
-    "last_posted_at": "2026-11-26T15:40:00Z",
-    "active": null
+    "count": 5,
+    "last_posted_at": "2026-11-27T15:40:00Z",
+    "active": {
+      "number": 5,
+      "category": "Riddle",
+      "question": "The more I dry, the wetter I get. What am I?",
+      "answer": "A towel",
+      "accepted_answers": [
+        "towel",
+        "a towel",
+        "towels",
+        "dish towel",
+        "tea towel"
+      ],
+      "explanation": "A towel gets wetter as it dries other things off.",
+      "posted_at": "2026-11-27T15:40:00Z",
+      "deadline": "2026-11-27T21:40:00Z",
+      "answers": {}
+    }
   },
   "challenges": {
     "active": null,
     "history": []
   },
   "last_game_completed_at": "2026-11-26T23:40:00Z",
-  "last_checked_at": "2026-11-27T13:40:00Z",
+  "last_checked_at": "2026-11-27T15:40:00Z",
   "round_history": [
     {
       "round": 3,
