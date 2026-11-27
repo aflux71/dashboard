@@ -248,7 +248,7 @@
       "name": "Pascal Vanderwalt",
       "games": 2,
       "wins": 0,
-      "points": 110,
+      "points": 120,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -271,7 +271,7 @@
           "points": 20
         },
         "battleship": {
-          "points": 5
+          "points": 15
         }
       }
     },
@@ -474,7 +474,22 @@
       "explanation": "A towel gets wetter as it dries other things off.",
       "posted_at": "2026-11-27T15:40:00Z",
       "deadline": "2026-11-27T21:40:00Z",
-      "answers": {}
+      "answers": {
+        "925667633": {
+          "name": "Jack Menna",
+          "answer": "Towel",
+          "correct": true,
+          "first": true,
+          "points": 10
+        },
+        "931318108": {
+          "name": "Susan Achal",
+          "answer": "Towel",
+          "correct": true,
+          "first": false,
+          "points": 5
+        }
+      }
     }
   },
   "challenges": {
@@ -482,7 +497,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-26T23:40:00Z",
-  "last_checked_at": "2026-11-27T15:40:00Z",
+  "last_checked_at": "2026-11-27T17:40:00Z",
   "round_history": [
     {
       "round": 3,
