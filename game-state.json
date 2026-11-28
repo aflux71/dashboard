@@ -31,7 +31,15 @@
     "phase_started_at": "2026-11-28T17:39:00Z",
     "phase_deadline": "2026-11-29T05:39:00Z",
     "registered_players": [],
-    "game_data": {}
+    "game_data": {
+      "host_signups_ignored": [
+        {
+          "id": "855006401",
+          "name": "Robert Achal",
+          "at": "2026-11-28T17:58:31Z"
+        }
+      ]
+    }
   },
   "players": {
     "878083896": {
@@ -460,7 +468,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-28T13:40:00Z",
-  "last_checked_at": "2026-11-28T17:39:00Z",
+  "last_checked_at": "2026-11-28T19:40:00Z",
   "round_history": [
     {
       "round": 3,
