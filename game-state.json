@@ -5,7 +5,7 @@
     "unique_name": "gamemaster",
     "api_endpoint": "https://cliq.zoho.com/api/v2/bots/gamemaster/message"
   },
-  "total_rounds_played": 6,
+  "total_rounds_played": 7,
   "schedule": {
     "auto_start": true,
     "hours_between_games": 4,
@@ -23,25 +23,7 @@
     "registration_hours": 12,
     "default_phase_hours": 8
   },
-  "current_game": {
-    "type": "would_you_rather",
-    "round_number": 7,
-    "status": "registration",
-    "phase": "registration",
-    "phase_started_at": "2026-11-27T13:40:00Z",
-    "phase_deadline": "2026-11-28T01:40:00Z",
-    "registered_players": [
-      {
-        "user_id": "931318108",
-        "name": "Susan Achal"
-      },
-      {
-        "user_id": "925667633",
-        "name": "Jack Menna"
-      }
-    ],
-    "game_data": {}
-  },
+  "current_game": null,
   "players": {
     "878083896": {
       "name": "Tracy Kent",
@@ -465,8 +447,8 @@
     "active": null,
     "history": []
   },
-  "last_game_completed_at": "2026-11-26T23:40:00Z",
-  "last_checked_at": "2026-11-28T01:39:12Z",
+  "last_game_completed_at": "2026-11-28T13:40:00Z",
+  "last_checked_at": "2026-11-28T13:40:00Z",
   "round_history": [
     {
       "round": 3,
@@ -518,6 +500,12 @@
         "898015158": 45
       },
       "completed_at": "2026-11-26T23:40:00Z"
+    },
+    {
+      "round": 7,
+      "type": "would_you_rather",
+      "result": "cancelled — 2/4 min players (Susan Achal, Jack Menna)",
+      "completed_at": "2026-11-28T13:40:00Z"
     }
   ]
 }
