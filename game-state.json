@@ -140,7 +140,7 @@
       "name": "Theresa Boyd",
       "games": 5,
       "wins": 3,
-      "points": 265,
+      "points": 280,
       "by_type": {
         "spy": {
           "games": 1,
@@ -172,6 +172,9 @@
           "games": 1,
           "wins": 1,
           "points": 110
+        },
+        "battleship": {
+          "points": 15
         }
       }
     },
@@ -230,7 +233,7 @@
       "name": "Pascal Vanderwalt",
       "games": 2,
       "wins": 0,
-      "points": 120,
+      "points": 150,
       "by_type": {
         "trivia": {
           "games": 1,
@@ -253,7 +256,7 @@
           "points": 20
         },
         "battleship": {
-          "points": 15
+          "points": 45
         }
       }
     },
@@ -448,7 +451,7 @@
     "history": []
   },
   "last_game_completed_at": "2026-11-28T13:40:00Z",
-  "last_checked_at": "2026-11-28T13:40:00Z",
+  "last_checked_at": "2026-11-28T15:38:00Z",
   "round_history": [
     {
       "round": 3,
